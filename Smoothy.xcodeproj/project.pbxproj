@@ -14,6 +14,13 @@
 		219957BC1D7120910017D0C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219957BA1D7120910017D0C8 /* LaunchScreen.storyboard */; };
 		219957C71D7120910017D0C8 /* SmoothyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219957C61D7120910017D0C8 /* SmoothyTests.swift */; };
 		219957D21D7120910017D0C8 /* SmoothyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219957D11D7120910017D0C8 /* SmoothyUITests.swift */; };
+		219957E01D7121090017D0C8 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219957DF1D7121090017D0C8 /* ViewController2.swift */; };
+		219957E81D713BB30017D0C8 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219957E71D713BB30017D0C8 /* FinalViewController.swift */; };
+		D0C29DC71D71CE40005982F1 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC21D71CE40005982F1 /* apple.png */; };
+		D0C29DC81D71CE40005982F1 /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC31D71CE40005982F1 /* banana.png */; };
+		D0C29DC91D71CE40005982F1 /* mixer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC41D71CE40005982F1 /* mixer.jpg */; };
+		D0C29DCA1D71CE40005982F1 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC51D71CE40005982F1 /* orange.png */; };
+		D0C29DCB1D71CE40005982F1 /* tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC61D71CE40005982F1 /* tomato.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		219957CD1D7120910017D0C8 /* SmoothyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmoothyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		219957D11D7120910017D0C8 /* SmoothyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothyUITests.swift; sourceTree = "<group>"; };
 		219957D31D7120910017D0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		219957DF1D7121090017D0C8 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		219957E71D713BB30017D0C8 /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		D0C29DC21D71CE40005982F1 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		D0C29DC31D71CE40005982F1 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
+		D0C29DC41D71CE40005982F1 /* mixer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mixer.jpg; sourceTree = "<group>"; };
+		D0C29DC51D71CE40005982F1 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
+		D0C29DC61D71CE40005982F1 /* tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomato.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +111,15 @@
 		219957B01D7120910017D0C8 /* Smoothy */ = {
 			isa = PBXGroup;
 			children = (
+				D0C29DC21D71CE40005982F1 /* apple.png */,
+				D0C29DC31D71CE40005982F1 /* banana.png */,
+				D0C29DC41D71CE40005982F1 /* mixer.jpg */,
+				D0C29DC51D71CE40005982F1 /* orange.png */,
+				D0C29DC61D71CE40005982F1 /* tomato.png */,
 				219957B11D7120910017D0C8 /* AppDelegate.swift */,
 				219957B31D7120910017D0C8 /* ViewController.swift */,
+				219957DF1D7121090017D0C8 /* ViewController2.swift */,
+				219957E71D713BB30017D0C8 /* FinalViewController.swift */,
 				219957B51D7120910017D0C8 /* Main.storyboard */,
 				219957B81D7120910017D0C8 /* Assets.xcassets */,
 				219957BA1D7120910017D0C8 /* LaunchScreen.storyboard */,
@@ -230,8 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				219957BC1D7120910017D0C8 /* LaunchScreen.storyboard in Resources */,
+				D0C29DCB1D71CE40005982F1 /* tomato.png in Resources */,
 				219957B91D7120910017D0C8 /* Assets.xcassets in Resources */,
+				D0C29DC71D71CE40005982F1 /* apple.png in Resources */,
 				219957B71D7120910017D0C8 /* Main.storyboard in Resources */,
+				D0C29DC81D71CE40005982F1 /* banana.png in Resources */,
+				D0C29DC91D71CE40005982F1 /* mixer.jpg in Resources */,
+				D0C29DCA1D71CE40005982F1 /* orange.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +283,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				219957B41D7120910017D0C8 /* ViewController.swift in Sources */,
+				219957E81D713BB30017D0C8 /* FinalViewController.swift in Sources */,
 				219957B21D7120910017D0C8 /* AppDelegate.swift in Sources */,
+				219957E01D7121090017D0C8 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +512,7 @@
 				219957D81D7120910017D0C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		219957D91D7120910017D0C8 /* Build configuration list for PBXNativeTarget "SmoothyTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +521,7 @@
 				219957DB1D7120910017D0C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		219957DC1D7120910017D0C8 /* Build configuration list for PBXNativeTarget "SmoothyUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +530,7 @@
 				219957DE1D7120910017D0C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
