@@ -31,34 +31,10 @@
                                     <segue destination="GEg-oy-c2Q" kind="presentation" id="e8d-jF-KSm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbf-aw-pNi">
-                                <rect key="frame" x="157" y="65" width="124" height="72"/>
-                                <color key="backgroundColor" red="1" green="0.44811857347129813" blue="0.53259204873652777" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="0zw-Sq-EXU"/>
-                                    <constraint firstAttribute="width" constant="124" id="q91-If-49h"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="6yd-ha-stz" appends="YES" id="LBC-CF-urm"/>
-                                </connections>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Lbf-aw-pNi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-227" id="2ck-Uo-WmR"/>
-                            <constraint firstItem="Lbf-aw-pNi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="29" id="e0u-cX-Nvy"/>
-                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="testLabel" destination="Lbf-aw-pNi" id="pAH-R7-Xs7"/>
-                        <outlet property="xConstraint" destination="e0u-cX-Nvy" id="Q8C-uq-geb"/>
-                        <outlet property="yConstraint" destination="2ck-Uo-WmR" id="JAx-oW-Dho"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="6yd-ha-stz">
@@ -125,20 +101,14 @@
                                     <segue destination="lY3-OI-bsH" kind="presentation" identifier="next" id="FOq-ac-qSK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KX-ub-dAY">
-                                <rect key="frame" x="26" y="20" width="197" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGl-Ho-GX7">
+                                <rect key="frame" x="219" y="150" width="153" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGl-Ho-GX7">
-                                <rect key="frame" x="248" y="72" width="127" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-cE-8eF">
-                                <rect key="frame" x="117" y="106" width="66" height="61"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-cE-8eF">
+                                <rect key="frame" x="102" y="21" width="66" height="61"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="66" id="r94-a1-dtr"/>
@@ -148,8 +118,8 @@
                                     <outletCollection property="gestureRecognizers" destination="mPK-I3-8hb" appends="YES" id="fhr-W1-zq3"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tomato.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sop-zU-e1b">
-                                <rect key="frame" x="214" y="146" width="57" height="62"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tomato.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sop-zU-e1b">
+                                <rect key="frame" x="206" y="20" width="57" height="62"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="57" id="QRA-k7-vV0"/>
@@ -159,8 +129,8 @@
                                     <outletCollection property="gestureRecognizers" destination="e1q-rP-Fcf" appends="YES" id="ef4-FQ-otY"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange.png" translatesAutoresizingMaskIntoConstraints="NO" id="sow-WP-CTE">
-                                <rect key="frame" x="279" y="169" width="64" height="62"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="orange.png" translatesAutoresizingMaskIntoConstraints="NO" id="sow-WP-CTE">
+                                <rect key="frame" x="291" y="20" width="64" height="62"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="93c-c0-2Zh"/>
@@ -171,7 +141,7 @@
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="68G-n8-MQ1">
-                                <rect key="frame" x="26" y="138" width="62" height="64"/>
+                                <rect key="frame" x="14" y="20" width="62" height="64"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="EHV-87-6Zf"/>
@@ -181,17 +151,30 @@
                                     <outletCollection property="gestureRecognizers" destination="cFv-US-xLf" appends="YES" id="6N7-Zb-6sU"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sZ-4J-lIE">
+                                <rect key="frame" x="259" y="214" width="106" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.57270493246560106" blue="0.85414682671647868" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ふたしめる">
+                                    <color key="titleColor" red="1" green="0.056107677723830074" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KX-ub-dAY">
+                                <rect key="frame" x="14" y="147" width="197" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Sop-zU-e1b" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-156" id="1LG-nk-gK3"/>
-                            <constraint firstItem="Sop-zU-e1b" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="55" id="EFI-fU-XYD"/>
-                            <constraint firstItem="68G-n8-MQ1" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-130" id="Guj-5i-cCI"/>
-                            <constraint firstItem="3gZ-cE-8eF" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-37" id="TKT-2D-Z5p"/>
-                            <constraint firstItem="68G-n8-MQ1" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="163" id="bfm-gW-kmw"/>
-                            <constraint firstItem="sow-WP-CTE" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-133" id="q7v-nS-1tG"/>
-                            <constraint firstItem="3gZ-cE-8eF" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-197" id="tVh-Cc-eqR"/>
-                            <constraint firstItem="sow-WP-CTE" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="123" id="xYf-S6-iVF"/>
+                            <constraint firstItem="Sop-zU-e1b" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-280" id="1LG-nk-gK3"/>
+                            <constraint firstItem="Sop-zU-e1b" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="45" id="EFI-fU-XYD"/>
+                            <constraint firstItem="68G-n8-MQ1" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-142" id="Guj-5i-cCI"/>
+                            <constraint firstItem="3gZ-cE-8eF" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-55" id="TKT-2D-Z5p"/>
+                            <constraint firstItem="68G-n8-MQ1" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-280" id="bfm-gW-kmw"/>
+                            <constraint firstItem="sow-WP-CTE" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-280" id="q7v-nS-1tG"/>
+                            <constraint firstItem="3gZ-cE-8eF" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-283" id="tVh-Cc-eqR"/>
+                            <constraint firstItem="sow-WP-CTE" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="135" id="xYf-S6-iVF"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

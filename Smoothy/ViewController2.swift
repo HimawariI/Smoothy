@@ -33,10 +33,10 @@ class ViewController2: UIViewController {
     
     
     @IBOutlet var shakeLabel: UILabel!
+    @IBOutlet var topLabel: UILabel!
+    //蓋閉めたか
+    var top = true
 
-
-    
-    
     //ミキサーに入ったかどうかを確認する配列
     var fruit:[Bool]=[false,false,false,false]
     
@@ -265,14 +265,28 @@ class ViewController2: UIViewController {
         
     }
     
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
-        shakeLabel.text = "shake shake!!"
+    @IBAction func topClose(){
+    
+        for i in 0 ..< 4 {
+            if(fruit[i] == false){
+                top = false
+            }
+        }
         
-      
-        self.performSegueWithIdentifier("next", sender: self)
+        
+    //    topLabel.origin.x = 155
+     //   topLabel.origin.y = 260
         
     }
 
+    
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        shakeLabel.text = "shake shake!!"
+        if top == true {
+        self.performSegueWithIdentifier("next", sender: self)
+        }
+        
+    }
     
 
     /*
