@@ -120,12 +120,12 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="unhappy.png" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-cE-8eF">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="unhappy2.png" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-cE-8eF">
                                 <rect key="frame" x="105" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="66" id="r94-a1-dtr"/>
-                                    <constraint firstAttribute="height" constant="61" id="xUE-kV-6dQ"/>
+                                    <constraint firstAttribute="width" constant="65" id="r94-a1-dtr"/>
+                                    <constraint firstAttribute="height" constant="65" id="xUE-kV-6dQ"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="mPK-I3-8hb" appends="YES" id="fhr-W1-zq3"/>
@@ -135,8 +135,8 @@
                                 <rect key="frame" x="200" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="57" id="QRA-k7-vV0"/>
-                                    <constraint firstAttribute="height" constant="62" id="Z9i-0a-s1A"/>
+                                    <constraint firstAttribute="height" constant="65" id="3aO-IE-wn0"/>
+                                    <constraint firstAttribute="width" constant="65" id="5vP-ql-m4d"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="e1q-rP-Fcf" appends="YES" id="ef4-FQ-otY"/>
@@ -146,8 +146,8 @@
                                 <rect key="frame" x="290" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="93c-c0-2Zh"/>
-                                    <constraint firstAttribute="width" constant="64" id="mOP-UN-qW4"/>
+                                    <constraint firstAttribute="height" constant="65" id="93c-c0-2Zh"/>
+                                    <constraint firstAttribute="width" constant="65" id="mOP-UN-qW4"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="dXV-i7-SO9" appends="YES" id="aJ9-uo-lrM"/>
@@ -157,8 +157,8 @@
                                 <rect key="frame" x="14" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="EHV-87-6Zf"/>
-                                    <constraint firstAttribute="width" constant="62" id="k65-ih-QvX"/>
+                                    <constraint firstAttribute="height" constant="65" id="EHV-87-6Zf"/>
+                                    <constraint firstAttribute="width" constant="65" id="k65-ih-QvX"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="cFv-US-xLf" appends="YES" id="6N7-Zb-6sU"/>
@@ -207,7 +207,7 @@
                             <constraint firstItem="3gZ-cE-8eF" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="-55" id="TKT-2D-Z5p"/>
                             <constraint firstItem="68G-n8-MQ1" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-280" id="bfm-gW-kmw"/>
                             <constraint firstItem="sow-WP-CTE" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-280" id="q7v-nS-1tG"/>
-                            <constraint firstItem="3gZ-cE-8eF" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-283" id="tVh-Cc-eqR"/>
+                            <constraint firstItem="3gZ-cE-8eF" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-280" id="tVh-Cc-eqR"/>
                             <constraint firstItem="sow-WP-CTE" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="135" id="xYf-S6-iVF"/>
                         </constraints>
                     </view>
@@ -289,7 +289,7 @@
         <image name="nervous.png" width="350" height="350"/>
         <image name="tired2.png" width="350" height="350"/>
         <image name="top.png" width="304" height="136"/>
-        <image name="unhappy.png" width="350" height="350"/>
+        <image name="unhappy2.png" width="350" height="350"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Lhv-av-Ebm"/>
