@@ -21,6 +21,12 @@
 		D0C29DC91D71CE40005982F1 /* mixer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC41D71CE40005982F1 /* mixer.jpg */; };
 		D0C29DCA1D71CE40005982F1 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC51D71CE40005982F1 /* orange.png */; };
 		D0C29DCB1D71CE40005982F1 /* tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC61D71CE40005982F1 /* tomato.png */; };
+		D0C29EF11D76A957005982F1 /* mixer.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29EEF1D76A957005982F1 /* mixer.png */; };
+		D0C29EF21D76A957005982F1 /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29EF01D76A957005982F1 /* top.png */; };
+		D0C29EF71D76AB25005982F1 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29EF31D76AB25005982F1 /* happy.png */; };
+		D0C29EF81D76AB25005982F1 /* nervous.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29EF41D76AB25005982F1 /* nervous.png */; };
+		D0C29EFA1D76AB25005982F1 /* unhappy.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29EF61D76AB25005982F1 /* unhappy.png */; };
+		D0C29EFC1D76AB89005982F1 /* tired2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29EFB1D76AB89005982F1 /* tired2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +67,12 @@
 		D0C29DC41D71CE40005982F1 /* mixer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mixer.jpg; sourceTree = "<group>"; };
 		D0C29DC51D71CE40005982F1 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
 		D0C29DC61D71CE40005982F1 /* tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomato.png; sourceTree = "<group>"; };
+		D0C29EEF1D76A957005982F1 /* mixer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixer.png; sourceTree = "<group>"; };
+		D0C29EF01D76A957005982F1 /* top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top.png; sourceTree = "<group>"; };
+		D0C29EF31D76AB25005982F1 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
+		D0C29EF41D76AB25005982F1 /* nervous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nervous.png; sourceTree = "<group>"; };
+		D0C29EF61D76AB25005982F1 /* unhappy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unhappy.png; sourceTree = "<group>"; };
+		D0C29EFB1D76AB89005982F1 /* tired2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tired2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,12 @@
 				D0C29DC41D71CE40005982F1 /* mixer.jpg */,
 				D0C29DC51D71CE40005982F1 /* orange.png */,
 				D0C29DC61D71CE40005982F1 /* tomato.png */,
+				D0C29EEF1D76A957005982F1 /* mixer.png */,
+				D0C29EF01D76A957005982F1 /* top.png */,
+				D0C29EF31D76AB25005982F1 /* happy.png */,
+				D0C29EF41D76AB25005982F1 /* nervous.png */,
+				D0C29EF61D76AB25005982F1 /* unhappy.png */,
+				D0C29EFB1D76AB89005982F1 /* tired2.png */,
 				219957B11D7120910017D0C8 /* AppDelegate.swift */,
 				219957B31D7120910017D0C8 /* ViewController.swift */,
 				219957DF1D7121090017D0C8 /* ViewController2.swift */,
@@ -251,7 +269,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				219957BC1D7120910017D0C8 /* LaunchScreen.storyboard in Resources */,
+				D0C29EFA1D76AB25005982F1 /* unhappy.png in Resources */,
 				D0C29DCB1D71CE40005982F1 /* tomato.png in Resources */,
+				D0C29EF11D76A957005982F1 /* mixer.png in Resources */,
+				D0C29EF21D76A957005982F1 /* top.png in Resources */,
+				D0C29EF81D76AB25005982F1 /* nervous.png in Resources */,
+				D0C29EF71D76AB25005982F1 /* happy.png in Resources */,
+				D0C29EFC1D76AB89005982F1 /* tired2.png in Resources */,
 				219957B91D7120910017D0C8 /* Assets.xcassets in Resources */,
 				D0C29DC71D71CE40005982F1 /* apple.png in Resources */,
 				219957B71D7120910017D0C8 /* Main.storyboard in Resources */,
