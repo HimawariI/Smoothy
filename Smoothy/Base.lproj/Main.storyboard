@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ry0-N6-2Xq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244.5" y="1187.5"/>
+            <point key="canvasLocation" x="244.5" y="1122.5"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="WOg-u6-kUc">
@@ -194,7 +194,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-wl-kgW">
                                 <rect key="frame" x="95" y="85" width="80" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="味">
+                                <state key="normal" title="風味">
                                     <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>

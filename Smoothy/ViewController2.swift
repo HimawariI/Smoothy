@@ -10,13 +10,31 @@ import UIKit
 
 class ViewController2: UIViewController {
 
-    @IBOutlet weak var apple: UIImageView!
-    
+   /* @IBOutlet weak var apple: UIImageView!
     @IBOutlet weak var banana: UIImageView!
-
     @IBOutlet weak var tomato: UIImageView!
-    
     @IBOutlet weak var orange: UIImageView!
+    */
+    
+    @IBOutlet var spring: UIImageView!
+    @IBOutlet var summer: UIImageView!
+    @IBOutlet var fall: UIImageView!
+    @IBOutlet var winter: UIImageView!
+    
+    @IBOutlet var sweet: UIImageView!
+    @IBOutlet var bitter: UIImageView!
+    @IBOutlet var fresh: UIImageView!
+    @IBOutlet var mild: UIImageView!
+    
+    @IBOutlet var happy: UIImageView!
+    @IBOutlet var unhappy: UIImageView!
+    @IBOutlet var tired: UIImageView!
+    @IBOutlet var nervous: UIImageView!
+    
+    @IBOutlet var diet: UIImageView!
+    @IBOutlet var beauty: UIImageView!
+    @IBOutlet var eye: UIImageView!
+    @IBOutlet var heart: UIImageView!
     
     
     @IBOutlet var checkLabel: UILabel!
