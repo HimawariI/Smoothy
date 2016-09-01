@@ -89,6 +89,12 @@ class ViewController2: UIViewController {
     var iconArray:[Bool]=[false,false,false,false, false,false,false,false, false,false,false,false, false,false,false,false]
     
     
+    /*ここから付け足す*/
+    //非表示　　falseが表示　trueが非表示
+    var hiddenArray:[Bool] = [false,false,false,false, true,true,true,true, true,true,true,true, true,true,true,true]
+    /*ここまで*/
+    
+    
     //checkメソッドで使った変数
     var isIn = false
     //iconCheckメソッドで使った変数
