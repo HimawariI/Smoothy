@@ -10,16 +10,17 @@ import UIKit
 
 class ViewController2: UIViewController {
 
-   @IBOutlet weak var apple: UIImageView!
+    
+    //16個のアイコン表示のためのUIImageView
+    @IBOutlet weak var apple: UIImageView!
     @IBOutlet weak var banana: UIImageView!
     @IBOutlet weak var tomato: UIImageView!
     @IBOutlet weak var orange: UIImageView!
- 
     
-    @IBOutlet var spring: UIImageView!
+    /*@IBOutlet var spring: UIImageView!
     @IBOutlet var summer: UIImageView!
     @IBOutlet var fall: UIImageView!
-    @IBOutlet var winter: UIImageView!
+    @IBOutlet var winter: UIImageView!*/
     
     @IBOutlet var sweet: UIImageView!
     @IBOutlet var bitter: UIImageView!
@@ -36,18 +37,47 @@ class ViewController2: UIViewController {
     @IBOutlet var eye: UIImageView!
     @IBOutlet var heart: UIImageView!
     
-    
-    @IBOutlet var checkLabel: UILabel!
-    
-    @IBOutlet weak var appleY: NSLayoutConstraint!
-    
+  
+    //アイコンのXY
     @IBOutlet weak var appleX: NSLayoutConstraint!
+    @IBOutlet weak var appleY: NSLayoutConstraint!
     @IBOutlet weak var bananaX: NSLayoutConstraint!
     @IBOutlet weak var bananaY: NSLayoutConstraint!
-    @IBOutlet weak var tomatoY: NSLayoutConstraint!
     @IBOutlet weak var tomatoX: NSLayoutConstraint!
-    @IBOutlet weak var orangeY: NSLayoutConstraint!
+    @IBOutlet weak var tomatoY: NSLayoutConstraint!
     @IBOutlet weak var orangeX: NSLayoutConstraint!
+    @IBOutlet weak var orangeY: NSLayoutConstraint!
+   
+    @IBOutlet weak var sweetX: NSLayoutConstraint!
+    @IBOutlet weak var sweetY: NSLayoutConstraint!
+    @IBOutlet weak var bitterX: NSLayoutConstraint!
+    @IBOutlet weak var bitterY: NSLayoutConstraint!
+    @IBOutlet weak var freshX: NSLayoutConstraint!
+    @IBOutlet weak var freshY: NSLayoutConstraint!
+    @IBOutlet weak var mildX: NSLayoutConstraint!
+    @IBOutlet weak var mildY: NSLayoutConstraint!
+    
+    @IBOutlet weak var happyX: NSLayoutConstraint!
+    @IBOutlet weak var happyY: NSLayoutConstraint!
+    @IBOutlet weak var unhappyX: NSLayoutConstraint!
+    @IBOutlet weak var unhappyY: NSLayoutConstraint!
+    @IBOutlet weak var nervousX: NSLayoutConstraint!
+    @IBOutlet weak var nervousY: NSLayoutConstraint!
+    @IBOutlet weak var tiredX: NSLayoutConstraint!
+    @IBOutlet weak var tiredY: NSLayoutConstraint!
+    
+    @IBOutlet weak var dietX: NSLayoutConstraint!
+    @IBOutlet weak var dietY: NSLayoutConstraint!
+    @IBOutlet weak var beautyX: NSLayoutConstraint!
+    @IBOutlet weak var beautyY: NSLayoutConstraint!
+    @IBOutlet weak var eyeX: NSLayoutConstraint!
+    @IBOutlet weak var eyeY: NSLayoutConstraint!
+    @IBOutlet weak var heartX: NSLayoutConstraint!
+    @IBOutlet weak var heartY: NSLayoutConstraint!
+    
+    
+    
+    @IBOutlet var checkLabel: UILabel!
     
     
     @IBOutlet var shakeLabel: UILabel!
@@ -56,15 +86,19 @@ class ViewController2: UIViewController {
     var top = true
 
     //ミキサーに入ったかどうかを確認する配列
-    var fruit:[Bool]=[false,false,false,false]
+    var iconArray:[Bool]=[false,false,false,false, false,false,false,false, false,false,false,false, false,false,false,false]
+    
     
     //checkメソッドで使った変数
     var isIn = false
+    //iconCheckメソッドで使った変数
+    var iconisIn = true
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //初期状態で季節アイコン以外を非表示にする
         sweet.hidden = true
         bitter.hidden = true
         fresh.hidden = true
@@ -80,6 +114,7 @@ class ViewController2: UIViewController {
         eye.hidden = true
         heart.hidden = true
         
+        
         // Do any additional setup after loading the view.
     }
     
@@ -89,19 +124,11 @@ class ViewController2: UIViewController {
     }
 
     
+    //季節
     @IBAction func panApple(sender: UIPanGestureRecognizer) {
-        
-        
-        var x1: CGFloat
-        var y1: CGFloat
-        
         //移動量を取得する。
         let move:CGPoint = sender.translationInView(view)
-        
-        //ドラッグした部品の座標に移動量を加算する。
-        //sender.view!.center.x += move.x
-        //sender.view!.center.y += move.y
-        
+
         //ラベルの位置の制約に移動量を加算する。
         appleX.constant += move.x
         appleY.constant += move.y
@@ -109,161 +136,337 @@ class ViewController2: UIViewController {
         //画面表示を更新する。
         view.layoutIfNeeded()
 
-        
-        x1 =  (sender.view!.center.x)
-        y1 =  (sender.view!.center.y)
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
     
-        
-        if(check(x1,y:y1) == true){
+        if(check(x,y:y) == true){
             print("りんごIn")
-             fruit[0] = true
+            iconArray[0] = true
         }else{
             print("りんごOut")
-            fruit[0] = false
+            iconArray[0] = false
         }
        
-
-        //現在位置を表示
-        //print("りんご")
-        //print("\(sender.view!.frame.origin.x), \(sender.view!.frame.origin.y)")
-        
         //移動量を0にする。
         sender.setTranslation(CGPointZero, inView:view)
         
-        checkArray(fruit)
+        checkArray(iconArray)
     }
     
     
     @IBAction func panBanana(sender: UIPanGestureRecognizer) {
-        
-        var x2: CGFloat
-        var y2: CGFloat
-        
-        //移動量を取得する。
         let move:CGPoint = sender.translationInView(view)
-        
-        //ドラッグした部品の座標に移動量を加算する。
-      //  sender.view!.center.x += move.x
-      //  sender.view!.center.y += move.y
-        
-        //ラベルの位置の制約に移動量を加算する。
+
         bananaX.constant += move.x
         bananaY.constant += move.y
         
-        //画面表示を更新する。
         view.layoutIfNeeded()
         
-        x2 =  (sender.view!.center.x)
-        y2 =  (sender.view!.center.y)
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
         
-        
-        
-        if(check(x2,y:y2) == true){
+        if(check(x,y:y) == true){
             print("バナナIn")
-            fruit[1] = true
+            iconArray[1] = true
         }else{
             print("バナナOut")
-            fruit[1] = false
+            iconArray[1] = false
         }
         
-        
-       // print("バナナ")
-        //print("\(sender.view!.frame.origin.x), \(sender.view!.frame.origin.y)")
-        
-        
-        //移動量を0にする。
         sender.setTranslation(CGPointZero, inView:view)
-        
-        checkArray(fruit)
+        checkArray(iconArray)
 
     }
 
     
     @IBAction func panTomato(sender: UIPanGestureRecognizer) {
-        
-        var x3: CGFloat
-        var y3: CGFloat
-        
-        //移動量を取得する。
         let move:CGPoint = sender.translationInView(view)
         
-        //ドラッグした部品の座標に移動量を加算する。
-       // sender.view!.center.x += move.x
-       // sender.view!.center.y += move.y
-        
-        //ラベルの位置の制約に移動量を加算する。
         tomatoX.constant += move.x
         tomatoY.constant += move.y
         
-        //画面表示を更新する。
         view.layoutIfNeeded()
         
-        x3 =  (sender.view!.center.x)
-        y3 =  (sender.view!.center.y)
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
         
         
-        if(check(x3,y:y3) == true){
+        if(check(x,y:y) == true){
             print("トマトIn")
-            fruit[2] = true
+            iconArray[2] = true
         }else{
             print("トマトOut")
-            fruit[2] = false
+            iconArray[2] = false
         }
-        
-        //現在位置を表示
-        //print("トマト")
-        //print("\(sender.view!.frame.origin.x), \(sender.view!.frame.origin.y)")
-        
-        //移動量を0にする。
+
         sender.setTranslation(CGPointZero, inView:view)
-        
-        checkArray(fruit)
+        checkArray(iconArray)
 
     }
  
     
     @IBAction func panOrange(sender: UIPanGestureRecognizer) {
-        
-        var x4: CGFloat
-        var y4: CGFloat
-        
-        //移動量を取得する。
         let move:CGPoint = sender.translationInView(view)
         
-        //ドラッグした部品の座標に移動量を加算する。
-       // sender.view!.center.x += move.x
-       // sender.view!.center.y += move.y
-        
-        //ラベルの位置の制約に移動量を加算する。
         orangeX.constant += move.x
         orangeY.constant += move.y
         
-        //画面表示を更新する。
         view.layoutIfNeeded()
         
-        x4 =  (sender.view!.center.x)
-        y4 =  (sender.view!.center.y)
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
         
-        if(check(x4,y:y4) == true){
+        if(check(x,y:y) == true){
             print("オレンジIn")
-            fruit[3] = true
+            iconArray[3] = true
         }else{
             print("オレンジOut")
-            fruit[3] = false
+            iconArray[3] = false
         }
-        
-        //現在位置を表示
-        //print("オレンジ")
-        //print("\(sender.view!.frame.origin.x), \(sender.view!.frame.origin.y)")
-        
-        //移動量を0にする。
+
         sender.setTranslation(CGPointZero, inView:view)
-        
-        checkArray(fruit)
+        checkArray(iconArray)
 
     }
     
+    //味
+    @IBAction func panSweet(sender: UIPanGestureRecognizer) {
+        let move:CGPoint = sender.translationInView(view)
+        sweetX.constant += move.x
+        sweetY.constant += move.y
+        view.layoutIfNeeded()
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("あまいIn")
+            iconArray[4] = true
+        }else{
+            print("あまいOut")
+            iconArray[4] = false
+        }
+        
+        sender.setTranslation(CGPointZero, inView:view)
+    }
+    
+    @IBAction func panBitter(sender: UIPanGestureRecognizer) {
+        let move:CGPoint = sender.translationInView(view)
+        bitterX.constant += move.x
+        bitterY.constant += move.y
+        view.layoutIfNeeded()
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("にがいIn")
+            iconArray[5] = true
+        }else{
+            print("にがいOut")
+            iconArray[5] = false
+        }
+        sender.setTranslation(CGPointZero, inView:view)
+    }
+    
+    @IBAction func panFresh(sender: UIPanGestureRecognizer) {
+        let move:CGPoint = sender.translationInView(view)
+        freshX.constant += move.x
+        freshY.constant += move.y
+        view.layoutIfNeeded()
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("さわやかIn")
+            iconArray[6] = true
+        }else{
+            print("さわやかOut")
+            iconArray[6] = false
+        }
+        
+        sender.setTranslation(CGPointZero, inView:view)
+    }
+    
+    @IBAction func panMild(sender: UIPanGestureRecognizer) {
+        let move:CGPoint = sender.translationInView(view)
+        mildX.constant += move.x
+        mildY.constant += move.y
+        view.layoutIfNeeded()
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("まいるどIn")
+            iconArray[7] = true
+        }else{
+            print("まいるどOut")
+            iconArray[7] = false
+        }
+        
+        sender.setTranslation(CGPointZero, inView:view)
+    }
+    
+    @IBAction func panHappy(sender: UIPanGestureRecognizer) {
+        let move:CGPoint = sender.translationInView(view)
+        happyX.constant += move.x
+        happyY.constant += move.y
+        view.layoutIfNeeded()
+        
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("はっぴーIn")
+            iconArray[8] = true
+        }else{
+            print("はっぴーOut")
+            iconArray[8] = false
+        }
+        sender.setTranslation(CGPointZero, inView:view)
+    }
 
+    @IBAction func panUnhappy(sender: UIPanGestureRecognizer) {
+        let move:CGPoint = sender.translationInView(view)
+        unhappyX.constant += move.x
+        unhappyY.constant += move.y
+        view.layoutIfNeeded()
+        
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("あんはっぴーIn")
+            iconArray[9] = true
+        }else{
+            print("あんはっぴーOut")
+            iconArray[9] = false
+        }
+        sender.setTranslation(CGPointZero, inView:view)
+    }
+    
+    @IBAction func panNervous(sender: UIPanGestureRecognizer) {
+        let move:CGPoint = sender.translationInView(view)
+        nervousX.constant += move.x
+        nervousY.constant += move.y
+        view.layoutIfNeeded()
+        
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("きんちょうIn")
+            iconArray[10] = true
+        }else{
+            print("きんちょうOut")
+            iconArray[10] = false
+        }
+        sender.setTranslation(CGPointZero, inView:view)
+    }
+    
+    @IBAction func panTired(sender: UIPanGestureRecognizer) {
+        let move:CGPoint = sender.translationInView(view)
+        tiredX.constant += move.x
+        tiredY.constant += move.y
+        view.layoutIfNeeded()
+        
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("つかれたIn")
+            iconArray[11] = true
+        }else{
+            print("つかれたOut")
+            iconArray[11] = false
+        }
+        sender.setTranslation(CGPointZero, inView:view)
+    }
+    
+    @IBAction func panDiet(sender: UIPanGestureRecognizer) {
+        let move:CGPoint = sender.translationInView(view)
+        dietX.constant += move.x
+        dietY.constant += move.y
+        view.layoutIfNeeded()
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("だいえっとIn")
+            iconArray[12] = true
+        }else{
+            print("だいえっとOut")
+            iconArray[12] = false
+        }
+        sender.setTranslation(CGPointZero, inView:view)
+    }
+    
+    @IBAction func panBeauty(sender: UIPanGestureRecognizer) {
+        let move:CGPoint = sender.translationInView(view)
+        beautyX.constant += move.x
+        beautyY.constant += move.y
+        view.layoutIfNeeded()
+        
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("びはだIn")
+            iconArray[13] = true
+        }else{
+            print("びはだOut")
+            iconArray[13] = false
+        }
+        sender.setTranslation(CGPointZero, inView:view)
+    }
+    
+    @IBAction func panEye(sender: UIPanGestureRecognizer) {
+        let move:CGPoint = sender.translationInView(view)
+        eyeX.constant += move.x
+        eyeY.constant += move.y
+        view.layoutIfNeeded()
+        
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("めIn")
+            iconArray[14] = true
+        }else{
+            print("めOut")
+            iconArray[14] = false
+        }
+        sender.setTranslation(CGPointZero, inView:view)
+    }
+    
+    @IBAction func panHeart(sender: UIPanGestureRecognizer) {
+        let move:CGPoint = sender.translationInView(view)
+        heartX.constant += move.x
+        heartY.constant += move.y
+        view.layoutIfNeeded()
+        
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("かいふくIn")
+            iconArray[15] = true
+        }else{
+            print("かいふくOut")
+            iconArray[15] = false
+        }
+        sender.setTranslation(CGPointZero, inView:view)
+    }
     
     //ミキサーに物が入ったか判別するメソッド
     func check(x:CGFloat,y:CGFloat) -> Bool{
@@ -273,6 +476,16 @@ class ViewController2: UIViewController {
         isIn = false
         }
         return isIn
+    }
+    
+    //アイコンがラベル以外の場所にあるか判別する
+    func iconCheck(x:CGFloat,y:CGFloat)-> Bool {
+        if((x >= 0 && x <= 375) && (y >= 0 && y <= 85)) {
+            iconisIn = true
+        } else {
+            iconisIn = false
+        }
+        return iconisIn
     }
     
     
@@ -301,7 +514,7 @@ class ViewController2: UIViewController {
     @IBAction func topClose(){
     
         for i in 0 ..< 4 {
-            if(fruit[i] == false){
+            if(iconArray[i] == false){
                 top = false
             }
         }
@@ -321,7 +534,11 @@ class ViewController2: UIViewController {
         
     }
     
+    
+    
+    
     @IBAction func seasonButton() {
+        
         apple.hidden = false
         banana.hidden = false
         tomato.hidden = false
@@ -331,7 +548,7 @@ class ViewController2: UIViewController {
         summer.hidden = false
         fall.hidden = false
         winter.hidden = false*/
-        
+   
         sweet.hidden = true
         bitter.hidden = true
         fresh.hidden = true
@@ -346,10 +563,13 @@ class ViewController2: UIViewController {
         beauty.hidden = true
         eye.hidden = true
         heart.hidden = true
+    
         
     }
     
     @IBAction func tasteButton() {
+        
+        
         apple.hidden = true
         banana.hidden = true
         tomato.hidden = true
