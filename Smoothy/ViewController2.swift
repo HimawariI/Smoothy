@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController2: UIViewController {
 
-   /* @IBOutlet weak var apple: UIImageView!
+   @IBOutlet weak var apple: UIImageView!
     @IBOutlet weak var banana: UIImageView!
     @IBOutlet weak var tomato: UIImageView!
     @IBOutlet weak var orange: UIImageView!
-    */
+ 
     
     @IBOutlet var spring: UIImageView!
     @IBOutlet var summer: UIImageView!
@@ -64,6 +64,21 @@ class ViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        sweet.hidden = true
+        bitter.hidden = true
+        fresh.hidden = true
+        mild.hidden = true
+        
+        happy.hidden = true
+        unhappy.hidden = true
+        tired.hidden = true
+        nervous.hidden = true
+        
+        diet.hidden = true
+        beauty.hidden = true
+        eye.hidden = true
+        heart.hidden = true
         
         // Do any additional setup after loading the view.
     }
@@ -304,6 +319,116 @@ class ViewController2: UIViewController {
         self.performSegueWithIdentifier("next", sender: self)
         }
         
+    }
+    
+    @IBAction func seasonButton() {
+        apple.hidden = false
+        banana.hidden = false
+        tomato.hidden = false
+        orange.hidden = false
+        
+        /*spring.hidden = false
+        summer.hidden = false
+        fall.hidden = false
+        winter.hidden = false*/
+        
+        sweet.hidden = true
+        bitter.hidden = true
+        fresh.hidden = true
+        mild.hidden = true
+        
+        happy.hidden = true
+        unhappy.hidden = true
+        tired.hidden = true
+        nervous.hidden = true
+        
+        diet.hidden = true
+        beauty.hidden = true
+        eye.hidden = true
+        heart.hidden = true
+        
+    }
+    
+    @IBAction func tasteButton() {
+        apple.hidden = true
+        banana.hidden = true
+        tomato.hidden = true
+        orange.hidden = true
+        
+        /*spring.hidden = true
+        summer.hidden = true
+        fall.hidden = true
+        winter.hidden = true*/
+        
+        sweet.hidden = false
+        bitter.hidden = false
+        fresh.hidden = false
+        mild.hidden = false
+        
+        happy.hidden = true
+        unhappy.hidden = true
+        tired.hidden = true
+        nervous.hidden = true
+        
+        diet.hidden = true
+        beauty.hidden = true
+        eye.hidden = true
+        heart.hidden = true
+        
+    }
+    
+    @IBAction func feelingButton() {
+        apple.hidden = true
+        banana.hidden = true
+        tomato.hidden = true
+        orange.hidden = true
+        
+        /*spring.hidden = true
+        summer.hidden = true
+        fall.hidden = true
+        winter.hidden = true*/
+        
+        sweet.hidden = true
+        bitter.hidden = true
+        fresh.hidden = true
+        mild.hidden = true
+        
+        happy.hidden = false
+        unhappy.hidden = false
+        tired.hidden = false
+        nervous.hidden = false
+        
+        diet.hidden = true
+        beauty.hidden = true
+        eye.hidden = true
+        heart.hidden = true
+        
+    }
+    
+    @IBAction func efficacyButton() {
+        apple.hidden = true
+        banana.hidden = true
+        tomato.hidden = true
+        orange.hidden = true
+        /*spring.hidden = true
+        summer.hidden = true
+        fall.hidden = true
+        winter.hidden = true*/
+        
+        sweet.hidden = true
+        bitter.hidden = true
+        fresh.hidden = true
+        mild.hidden = true
+        
+        happy.hidden = true
+        unhappy.hidden = true
+        tired.hidden = true
+        nervous.hidden = true
+        
+        diet.hidden = false
+        beauty.hidden = false
+        eye.hidden = false
+        heart.hidden = false
     }
     
 

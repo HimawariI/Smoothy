@@ -131,7 +131,7 @@
                                     <outletCollection property="gestureRecognizers" destination="mPK-I3-8hb" appends="YES" id="fhr-W1-zq3"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nervous.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sop-zU-e1b">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="imomushiman.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sop-zU-e1b">
                                 <rect key="frame" x="200" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -142,7 +142,7 @@
                                     <outletCollection property="gestureRecognizers" destination="e1q-rP-Fcf" appends="YES" id="ef4-FQ-otY"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tired2.png" translatesAutoresizingMaskIntoConstraints="NO" id="sow-WP-CTE">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="snowman.png" translatesAutoresizingMaskIntoConstraints="NO" id="sow-WP-CTE">
                                 <rect key="frame" x="290" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -176,20 +176,9 @@
                                 <state key="normal" title="季節">
                                     <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yga-7G-ID9">
-                                <rect key="frame" x="183" y="85" width="80" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="気分">
-                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB9-7v-uxE">
-                                <rect key="frame" x="271" y="85" width="80" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="効能">
-                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <connections>
+                                    <action selector="seasonButton" destination="GEg-oy-c2Q" eventType="touchUpInside" id="AoF-h8-aee"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-wl-kgW">
                                 <rect key="frame" x="95" y="85" width="80" height="30"/>
@@ -197,7 +186,66 @@
                                 <state key="normal" title="風味">
                                     <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tasteButton" destination="GEg-oy-c2Q" eventType="touchUpInside" id="I4a-uc-CHe"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yga-7G-ID9">
+                                <rect key="frame" x="183" y="85" width="80" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="気分">
+                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="feelingButton" destination="GEg-oy-c2Q" eventType="touchUpInside" id="ND2-hW-vJD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB9-7v-uxE">
+                                <rect key="frame" x="271" y="85" width="80" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="効能">
+                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="efficacyButton" destination="GEg-oy-c2Q" eventType="touchUpInside" id="QzH-Xd-JHK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sweet.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kku-V5-rT8">
+                                <rect key="frame" x="13" y="15" width="65" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy.png" translatesAutoresizingMaskIntoConstraints="NO" id="hPS-Qz-V6L">
+                                <rect key="frame" x="14" y="15" width="65" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diet.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vg3-QJ-hdb">
+                                <rect key="frame" x="13" y="15" width="65" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bitt.png" translatesAutoresizingMaskIntoConstraints="NO" id="J5d-SF-EBw">
+                                <rect key="frame" x="103" y="15" width="65" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unhappy2.png" translatesAutoresizingMaskIntoConstraints="NO" id="HV8-Og-35w">
+                                <rect key="frame" x="103" y="15" width="65" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nervous.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q1c-Ev-elm">
+                                <rect key="frame" x="200" y="15" width="65" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skin.png" translatesAutoresizingMaskIntoConstraints="NO" id="L5K-oe-geA">
+                                <rect key="frame" x="103" y="15" width="65" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eye.png" translatesAutoresizingMaskIntoConstraints="NO" id="aQN-lP-sgj">
+                                <rect key="frame" x="198" y="15" width="65" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mild.png" translatesAutoresizingMaskIntoConstraints="NO" id="DHY-Fp-0Ft">
+                                <rect key="frame" x="290" y="15" width="65" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tired2.png" translatesAutoresizingMaskIntoConstraints="NO" id="y1o-e9-905">
+                                <rect key="frame" x="290" y="15" width="65" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="health3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Myl-02-d4S">
+                                <rect key="frame" x="290" y="15" width="65" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fresh.png" translatesAutoresizingMaskIntoConstraints="NO" id="HGj-Es-gbk">
+                                <rect key="frame" x="200" y="15" width="65" height="65"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -219,14 +267,26 @@
                         <outlet property="banana" destination="3gZ-cE-8eF" id="zin-0c-0XA"/>
                         <outlet property="bananaX" destination="TKT-2D-Z5p" id="RIG-KJ-Cmh"/>
                         <outlet property="bananaY" destination="tVh-Cc-eqR" id="sdd-O1-fhe"/>
+                        <outlet property="beauty" destination="L5K-oe-geA" id="dZi-r9-48r"/>
+                        <outlet property="bitter" destination="J5d-SF-EBw" id="wPz-b4-Wzg"/>
                         <outlet property="checkLabel" destination="9KX-ub-dAY" id="x8i-ha-jtX"/>
+                        <outlet property="diet" destination="Vg3-QJ-hdb" id="YX2-h2-bEj"/>
+                        <outlet property="eye" destination="aQN-lP-sgj" id="NWj-MJ-Y5S"/>
+                        <outlet property="fresh" destination="HGj-Es-gbk" id="X0P-8r-zyV"/>
+                        <outlet property="happy" destination="hPS-Qz-V6L" id="PyD-h5-1S0"/>
+                        <outlet property="heart" destination="Myl-02-d4S" id="Sx1-OF-IbO"/>
+                        <outlet property="mild" destination="DHY-Fp-0Ft" id="wlw-Fy-HGo"/>
+                        <outlet property="nervous" destination="Q1c-Ev-elm" id="rCy-pS-C0o"/>
                         <outlet property="orange" destination="sow-WP-CTE" id="9Ds-ct-qZT"/>
                         <outlet property="orangeX" destination="xYf-S6-iVF" id="mAF-pw-BKm"/>
                         <outlet property="orangeY" destination="q7v-nS-1tG" id="sgw-dK-s2Y"/>
                         <outlet property="shakeLabel" destination="hGl-Ho-GX7" id="4nr-9t-tjo"/>
+                        <outlet property="sweet" destination="Kku-V5-rT8" id="Nyp-44-Uo7"/>
+                        <outlet property="tired" destination="y1o-e9-905" id="NZ3-4k-ImO"/>
                         <outlet property="tomato" destination="Sop-zU-e1b" id="Apz-by-Fl0"/>
                         <outlet property="tomatoX" destination="EFI-fU-XYD" id="3dg-Zy-aCZ"/>
                         <outlet property="tomatoY" destination="1LG-nk-gK3" id="5uZ-CY-cMi"/>
+                        <outlet property="unhappy" destination="HV8-Og-35w" id="aav-lJ-yZE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSr-Jp-cX4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -252,7 +312,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="753.5" y="277.5"/>
+            <point key="canvasLocation" x="752.5" y="287.5"/>
         </scene>
         <!--Final View Controller-->
         <scene sceneID="Qvq-l8-iGG">
@@ -284,9 +344,19 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bitt.png" width="320" height="322"/>
+        <image name="diet.png" width="350" height="350"/>
+        <image name="eye.png" width="350" height="350"/>
+        <image name="fresh.png" width="320" height="322"/>
         <image name="happy.png" width="350" height="350"/>
+        <image name="health3.png" width="350" height="350"/>
+        <image name="imomushiman.png" width="320" height="322"/>
+        <image name="mild.png" width="320" height="322"/>
         <image name="mixer.png" width="328" height="699"/>
         <image name="nervous.png" width="350" height="350"/>
+        <image name="skin.png" width="350" height="350"/>
+        <image name="snowman.png" width="320" height="322"/>
+        <image name="sweet.png" width="320" height="322"/>
         <image name="tired2.png" width="350" height="350"/>
         <image name="top.png" width="304" height="136"/>
         <image name="unhappy2.png" width="350" height="350"/>
