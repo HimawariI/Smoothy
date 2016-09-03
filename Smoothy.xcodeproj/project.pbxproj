@@ -16,11 +16,9 @@
 		219957D21D7120910017D0C8 /* SmoothyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219957D11D7120910017D0C8 /* SmoothyUITests.swift */; };
 		219957E01D7121090017D0C8 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219957DF1D7121090017D0C8 /* ViewController2.swift */; };
 		219957E81D713BB30017D0C8 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219957E71D713BB30017D0C8 /* FinalViewController.swift */; };
-		D0C29DC71D71CE40005982F1 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC21D71CE40005982F1 /* apple.png */; };
-		D0C29DC81D71CE40005982F1 /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC31D71CE40005982F1 /* banana.png */; };
+		D04FB2191D7B4F3600CA14BD /* spring.png in Resources */ = {isa = PBXBuildFile; fileRef = D04FB2181D7B4F3600CA14BD /* spring.png */; };
+		D04FB21B1D7B4FB300CA14BD /* summer.png in Resources */ = {isa = PBXBuildFile; fileRef = D04FB21A1D7B4FB300CA14BD /* summer.png */; };
 		D0C29DC91D71CE40005982F1 /* mixer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC41D71CE40005982F1 /* mixer.jpg */; };
-		D0C29DCA1D71CE40005982F1 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC51D71CE40005982F1 /* orange.png */; };
-		D0C29DCB1D71CE40005982F1 /* tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC61D71CE40005982F1 /* tomato.png */; };
 		D0C29EF11D76A957005982F1 /* mixer.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29EEF1D76A957005982F1 /* mixer.png */; };
 		D0C29EF21D76A957005982F1 /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29EF01D76A957005982F1 /* top.png */; };
 		D0C29EF71D76AB25005982F1 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29EF31D76AB25005982F1 /* happy.png */; };
@@ -74,11 +72,9 @@
 		219957D31D7120910017D0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		219957DF1D7121090017D0C8 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		219957E71D713BB30017D0C8 /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
-		D0C29DC21D71CE40005982F1 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
-		D0C29DC31D71CE40005982F1 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
+		D04FB2181D7B4F3600CA14BD /* spring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spring.png; sourceTree = "<group>"; };
+		D04FB21A1D7B4FB300CA14BD /* summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = summer.png; sourceTree = "<group>"; };
 		D0C29DC41D71CE40005982F1 /* mixer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mixer.jpg; sourceTree = "<group>"; };
-		D0C29DC51D71CE40005982F1 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
-		D0C29DC61D71CE40005982F1 /* tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomato.png; sourceTree = "<group>"; };
 		D0C29EEF1D76A957005982F1 /* mixer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixer.png; sourceTree = "<group>"; };
 		D0C29EF01D76A957005982F1 /* top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top.png; sourceTree = "<group>"; };
 		D0C29EF31D76AB25005982F1 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
@@ -147,11 +143,10 @@
 		219957B01D7120910017D0C8 /* Smoothy */ = {
 			isa = PBXGroup;
 			children = (
-				D0C29DC21D71CE40005982F1 /* apple.png */,
-				D0C29DC31D71CE40005982F1 /* banana.png */,
+				D04FB2181D7B4F3600CA14BD /* spring.png */,
+				D04FB21A1D7B4FB300CA14BD /* summer.png */,
 				D0C29DC41D71CE40005982F1 /* mixer.jpg */,
-				D0C29DC51D71CE40005982F1 /* orange.png */,
-				D0C29DC61D71CE40005982F1 /* tomato.png */,
+				D0C29EFE1D76CCA8005982F1 /* snowman.png */,
 				D0C29EEF1D76A957005982F1 /* mixer.png */,
 				D0C29EF01D76A957005982F1 /* top.png */,
 				D0C29EF31D76AB25005982F1 /* happy.png */,
@@ -159,7 +154,6 @@
 				D0C29EFB1D76AB89005982F1 /* tired2.png */,
 				D0C29F011D76CEAF005982F1 /* unhappy2.png */,
 				D0C29EFD1D76CCA8005982F1 /* imomushiman.png */,
-				D0C29EFE1D76CCA8005982F1 /* snowman.png */,
 				D0C29F3D1D77E4FD005982F1 /* eye.png */,
 				D0C29F3E1D77E4FD005982F1 /* eye1.png */,
 				D0C29F3F1D77E4FD005982F1 /* health.png */,
@@ -307,10 +301,10 @@
 				D0C29F481D77E507005982F1 /* skin.png in Resources */,
 				219957BC1D7120910017D0C8 /* LaunchScreen.storyboard in Resources */,
 				D0C29F001D76CCA8005982F1 /* snowman.png in Resources */,
-				D0C29DCB1D71CE40005982F1 /* tomato.png in Resources */,
 				D0C29F441D77E4FD005982F1 /* health3.png in Resources */,
 				D0C29EF11D76A957005982F1 /* mixer.png in Resources */,
 				D0C29EF21D76A957005982F1 /* top.png in Resources */,
+				D04FB21B1D7B4FB300CA14BD /* summer.png in Resources */,
 				D0C29F021D76CEAF005982F1 /* unhappy2.png in Resources */,
 				D0C29EF81D76AB25005982F1 /* nervous.png in Resources */,
 				D0C29EF71D76AB25005982F1 /* happy.png in Resources */,
@@ -318,18 +312,16 @@
 				D0C29EFC1D76AB89005982F1 /* tired2.png in Resources */,
 				D0C29F471D77E507005982F1 /* diet.png in Resources */,
 				219957B91D7120910017D0C8 /* Assets.xcassets in Resources */,
-				D0C29DC71D71CE40005982F1 /* apple.png in Resources */,
 				D0C29F421D77E4FD005982F1 /* eye1.png in Resources */,
 				219957B71D7120910017D0C8 /* Main.storyboard in Resources */,
 				D0C29F411D77E4FD005982F1 /* eye.png in Resources */,
-				D0C29DC81D71CE40005982F1 /* banana.png in Resources */,
+				D04FB2191D7B4F3600CA14BD /* spring.png in Resources */,
 				D0C29F4D1D77F0EA005982F1 /* bitt.png in Resources */,
 				D0C29F501D77F0EA005982F1 /* sweet.png in Resources */,
 				D0C29F4E1D77F0EA005982F1 /* fresh.png in Resources */,
 				D0C29F4F1D77F0EA005982F1 /* mild.png in Resources */,
 				D0C29DC91D71CE40005982F1 /* mixer.jpg in Resources */,
 				D0C29EFF1D76CCA8005982F1 /* imomushiman.png in Resources */,
-				D0C29DCA1D71CE40005982F1 /* orange.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

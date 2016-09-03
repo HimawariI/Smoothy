@@ -117,7 +117,7 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy.png" translatesAutoresizingMaskIntoConstraints="NO" id="68G-n8-MQ1">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spring.png" translatesAutoresizingMaskIntoConstraints="NO" id="68G-n8-MQ1">
                                 <rect key="frame" x="23" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -128,7 +128,7 @@
                                     <outletCollection property="gestureRecognizers" destination="cFv-US-xLf" appends="YES" id="6N7-Zb-6sU"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unhappy2.png" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-cE-8eF">
+                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="summer.png" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-cE-8eF">
                                 <rect key="frame" x="111" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -139,7 +139,7 @@
                                     <outletCollection property="gestureRecognizers" destination="mPK-I3-8hb" appends="YES" id="fhr-W1-zq3"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imomushiman.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sop-zU-e1b">
+                            <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imomushiman.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sop-zU-e1b">
                                 <rect key="frame" x="199" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -150,7 +150,7 @@
                                     <outletCollection property="gestureRecognizers" destination="e1q-rP-Fcf" appends="YES" id="ef4-FQ-otY"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowman.png" translatesAutoresizingMaskIntoConstraints="NO" id="sow-WP-CTE">
+                            <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowman.png" translatesAutoresizingMaskIntoConstraints="NO" id="sow-WP-CTE">
                                 <rect key="frame" x="287" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -174,40 +174,40 @@
                                     <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="seasonButton" destination="GEg-oy-c2Q" eventType="touchUpInside" id="AoF-h8-aee"/>
+                                    <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="rHP-tq-zkg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-wl-kgW">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-wl-kgW">
                                 <rect key="frame" x="95" y="85" width="80" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="風味">
                                     <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="tasteButton" destination="GEg-oy-c2Q" eventType="touchUpInside" id="I4a-uc-CHe"/>
+                                    <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="Bpi-Q0-ntI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yga-7G-ID9">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yga-7G-ID9">
                                 <rect key="frame" x="183" y="85" width="80" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="気分">
                                     <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="feelingButton" destination="GEg-oy-c2Q" eventType="touchUpInside" id="ND2-hW-vJD"/>
+                                    <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="Cfb-Do-UfQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB9-7v-uxE">
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB9-7v-uxE">
                                 <rect key="frame" x="271" y="85" width="80" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="効能">
                                     <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="efficacyButton" destination="GEg-oy-c2Q" eventType="touchUpInside" id="QzH-Xd-JHK"/>
+                                    <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="JVV-yn-c6z"/>
                                 </connections>
                             </button>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sweet.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kku-V5-rT8">
+                            <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sweet.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kku-V5-rT8">
                                 <rect key="frame" x="23" y="15" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="4JL-Tr-L0d"/>
@@ -217,7 +217,37 @@
                                     <outletCollection property="gestureRecognizers" destination="3Po-R7-Usu" appends="YES" id="neJ-Me-k0Y"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy.png" translatesAutoresizingMaskIntoConstraints="NO" id="hPS-Qz-V6L">
+                            <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitt.png" translatesAutoresizingMaskIntoConstraints="NO" id="J5d-SF-EBw">
+                                <rect key="frame" x="111" y="15" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="DKc-Rc-exI"/>
+                                    <constraint firstAttribute="width" constant="65" id="Or2-qj-mw1"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Mlz-kh-DEq" appends="YES" id="4ES-v1-lXS"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fresh.png" translatesAutoresizingMaskIntoConstraints="NO" id="HGj-Es-gbk">
+                                <rect key="frame" x="199" y="15" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="GwO-Ed-xD7"/>
+                                    <constraint firstAttribute="width" constant="65" id="QHr-SQ-kj9"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iNx-Er-1xY" appends="YES" id="pFw-S6-Jij"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mild.png" translatesAutoresizingMaskIntoConstraints="NO" id="DHY-Fp-0Ft">
+                                <rect key="frame" x="287" y="15" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="2vf-zh-1d6"/>
+                                    <constraint firstAttribute="height" constant="65" id="Iv4-pb-QZv"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Rxc-NM-CQ4" appends="YES" id="K0U-KY-8N6"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy.png" translatesAutoresizingMaskIntoConstraints="NO" id="hPS-Qz-V6L">
                                 <rect key="frame" x="23" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -228,38 +258,7 @@
                                     <outletCollection property="gestureRecognizers" destination="04h-qB-gvp" appends="YES" id="nUN-uT-bfr"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diet.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vg3-QJ-hdb">
-                                <rect key="frame" x="23" y="15" width="65" height="65"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="GQS-Ke-Ten"/>
-                                    <constraint firstAttribute="height" constant="65" id="iJn-wv-6cj"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="TOW-dA-zuf" appends="YES" id="FNS-3r-0Tw"/>
-                                </connections>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fresh.png" translatesAutoresizingMaskIntoConstraints="NO" id="HGj-Es-gbk">
-                                <rect key="frame" x="199" y="15" width="65" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="GwO-Ed-xD7"/>
-                                    <constraint firstAttribute="width" constant="65" id="QHr-SQ-kj9"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="iNx-Er-1xY" appends="YES" id="pFw-S6-Jij"/>
-                                </connections>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitt.png" translatesAutoresizingMaskIntoConstraints="NO" id="J5d-SF-EBw">
-                                <rect key="frame" x="111" y="15" width="65" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="DKc-Rc-exI"/>
-                                    <constraint firstAttribute="width" constant="65" id="Or2-qj-mw1"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Mlz-kh-DEq" appends="YES" id="4ES-v1-lXS"/>
-                                </connections>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unhappy2.png" translatesAutoresizingMaskIntoConstraints="NO" id="HV8-Og-35w">
+                            <imageView tag="9" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unhappy2.png" translatesAutoresizingMaskIntoConstraints="NO" id="HV8-Og-35w">
                                 <rect key="frame" x="111" y="15" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="U0l-sl-ADO"/>
@@ -269,7 +268,7 @@
                                     <outletCollection property="gestureRecognizers" destination="dik-dr-GGk" appends="YES" id="WeU-Kp-4wQ"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nervous.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q1c-Ev-elm">
+                            <imageView tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nervous.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q1c-Ev-elm">
                                 <rect key="frame" x="199" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -280,7 +279,28 @@
                                     <outletCollection property="gestureRecognizers" destination="sVn-bl-NgG" appends="YES" id="x6b-uf-WQq"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skin.png" translatesAutoresizingMaskIntoConstraints="NO" id="L5K-oe-geA">
+                            <imageView tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tired2.png" translatesAutoresizingMaskIntoConstraints="NO" id="y1o-e9-905">
+                                <rect key="frame" x="287" y="15" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="UHj-4U-pV7"/>
+                                    <constraint firstAttribute="height" constant="65" id="mMT-4F-OfG"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Wci-WY-e5c" appends="YES" id="dEv-B6-VQI"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="12" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diet.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vg3-QJ-hdb">
+                                <rect key="frame" x="23" y="15" width="65" height="65"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="GQS-Ke-Ten"/>
+                                    <constraint firstAttribute="height" constant="65" id="iJn-wv-6cj"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TOW-dA-zuf" appends="YES" id="FNS-3r-0Tw"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="13" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skin.png" translatesAutoresizingMaskIntoConstraints="NO" id="L5K-oe-geA">
                                 <rect key="frame" x="111" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -291,7 +311,7 @@
                                     <outletCollection property="gestureRecognizers" destination="iaQ-pi-9ED" appends="YES" id="crk-I1-ZPd"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye.png" translatesAutoresizingMaskIntoConstraints="NO" id="aQN-lP-sgj">
+                            <imageView tag="14" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye.png" translatesAutoresizingMaskIntoConstraints="NO" id="aQN-lP-sgj">
                                 <rect key="frame" x="199" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -302,27 +322,7 @@
                                     <outletCollection property="gestureRecognizers" destination="Fds-LS-kbJ" appends="YES" id="zpf-Zm-4Zu"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mild.png" translatesAutoresizingMaskIntoConstraints="NO" id="DHY-Fp-0Ft">
-                                <rect key="frame" x="287" y="15" width="65" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="2vf-zh-1d6"/>
-                                    <constraint firstAttribute="height" constant="65" id="Iv4-pb-QZv"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Rxc-NM-CQ4" appends="YES" id="K0U-KY-8N6"/>
-                                </connections>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tired2.png" translatesAutoresizingMaskIntoConstraints="NO" id="y1o-e9-905">
-                                <rect key="frame" x="287" y="15" width="65" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="UHj-4U-pV7"/>
-                                    <constraint firstAttribute="height" constant="65" id="mMT-4F-OfG"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Wci-WY-e5c" appends="YES" id="dEv-B6-VQI"/>
-                                </connections>
-                            </imageView>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Myl-02-d4S">
+                            <imageView tag="15" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Myl-02-d4S">
                                 <rect key="frame" x="287" y="15" width="65" height="65"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -381,140 +381,141 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="apple" destination="68G-n8-MQ1" id="Vc9-5E-Gy1"/>
-                        <outlet property="appleX" destination="Guj-5i-cCI" id="kPh-Sa-kLm"/>
-                        <outlet property="appleY" destination="bfm-gW-kmw" id="msv-Os-sJG"/>
-                        <outlet property="banana" destination="3gZ-cE-8eF" id="zin-0c-0XA"/>
-                        <outlet property="bananaX" destination="TKT-2D-Z5p" id="RIG-KJ-Cmh"/>
-                        <outlet property="bananaY" destination="tVh-Cc-eqR" id="sdd-O1-fhe"/>
-                        <outlet property="beauty" destination="L5K-oe-geA" id="dZi-r9-48r"/>
-                        <outlet property="beautyX" destination="o5Z-Q6-bin" id="4qS-qD-kOs"/>
-                        <outlet property="beautyY" destination="fon-yy-ihh" id="EFw-I8-JId"/>
-                        <outlet property="bitter" destination="J5d-SF-EBw" id="wPz-b4-Wzg"/>
-                        <outlet property="bitterX" destination="tuC-gq-v1G" id="ct7-cW-xMS"/>
-                        <outlet property="bitterY" destination="gdK-Ty-i0E" id="D9Y-eA-NS6"/>
                         <outlet property="checkLabel" destination="9KX-ub-dAY" id="x8i-ha-jtX"/>
-                        <outlet property="diet" destination="Vg3-QJ-hdb" id="YX2-h2-bEj"/>
-                        <outlet property="dietX" destination="Zse-bp-bA7" id="FN4-hB-sPV"/>
-                        <outlet property="dietY" destination="LgW-SZ-DKc" id="RJZ-6a-jiM"/>
-                        <outlet property="eye" destination="aQN-lP-sgj" id="NWj-MJ-Y5S"/>
-                        <outlet property="eyeX" destination="n8E-9p-udg" id="K69-bS-WNN"/>
-                        <outlet property="eyeY" destination="ZTt-db-fnN" id="rS3-cU-qEk"/>
-                        <outlet property="fresh" destination="HGj-Es-gbk" id="X0P-8r-zyV"/>
-                        <outlet property="freshX" destination="QcL-LS-HKd" id="kWh-st-Q9b"/>
-                        <outlet property="freshY" destination="WOZ-iU-Mj7" id="x9r-66-MTo"/>
-                        <outlet property="happy" destination="hPS-Qz-V6L" id="PyD-h5-1S0"/>
-                        <outlet property="happyX" destination="osL-U3-YBc" id="jEm-2O-Anc"/>
-                        <outlet property="happyY" destination="VE6-dr-3NX" id="YM4-tj-NbE"/>
-                        <outlet property="heart" destination="Myl-02-d4S" id="Sx1-OF-IbO"/>
-                        <outlet property="heartX" destination="qvc-Hx-DG0" id="EAU-N0-XLs"/>
-                        <outlet property="heartY" destination="U3B-qW-I5Q" id="WML-1B-hGA"/>
-                        <outlet property="mild" destination="DHY-Fp-0Ft" id="wlw-Fy-HGo"/>
-                        <outlet property="mildX" destination="tSK-cz-ULo" id="3jZ-qF-Sfn"/>
-                        <outlet property="mildY" destination="pvg-28-LnJ" id="A7M-KJ-hdT"/>
-                        <outlet property="nervous" destination="Q1c-Ev-elm" id="rCy-pS-C0o"/>
-                        <outlet property="nervousX" destination="v9k-nK-WVw" id="zeO-NX-XHf"/>
-                        <outlet property="nervousY" destination="umF-Sh-NB6" id="DOa-2F-Dfn"/>
-                        <outlet property="orange" destination="sow-WP-CTE" id="9Ds-ct-qZT"/>
-                        <outlet property="orangeX" destination="xYf-S6-iVF" id="mAF-pw-BKm"/>
-                        <outlet property="orangeY" destination="q7v-nS-1tG" id="sgw-dK-s2Y"/>
                         <outlet property="shakeLabel" destination="hGl-Ho-GX7" id="4nr-9t-tjo"/>
-                        <outlet property="sweet" destination="Kku-V5-rT8" id="Nyp-44-Uo7"/>
-                        <outlet property="sweetX" destination="gPZ-3M-fcI" id="7B9-XW-oRA"/>
-                        <outlet property="sweetY" destination="y7H-qp-MCA" id="AK5-dW-7Go"/>
-                        <outlet property="tired" destination="y1o-e9-905" id="NZ3-4k-ImO"/>
-                        <outlet property="tiredX" destination="YBG-Kp-1bM" id="5hA-fV-fNz"/>
-                        <outlet property="tiredY" destination="LDP-Pa-7a8" id="m3K-YI-hQD"/>
-                        <outlet property="tomato" destination="Sop-zU-e1b" id="Apz-by-Fl0"/>
-                        <outlet property="tomatoX" destination="EFI-fU-XYD" id="3dg-Zy-aCZ"/>
-                        <outlet property="tomatoY" destination="1LG-nk-gK3" id="5uZ-CY-cMi"/>
-                        <outlet property="unhappy" destination="HV8-Og-35w" id="aav-lJ-yZE"/>
-                        <outlet property="unhappyX" destination="uZy-Hy-3Gy" id="j7u-2S-bx1"/>
-                        <outlet property="unhappyY" destination="jfK-H7-3wY" id="3a9-Fs-FFh"/>
+                        <outletCollection property="iconCollection" destination="68G-n8-MQ1" collectionClass="NSMutableArray" id="DRC-PG-ZCe"/>
+                        <outletCollection property="iconCollection" destination="3gZ-cE-8eF" collectionClass="NSMutableArray" id="yfq-SD-OsP"/>
+                        <outletCollection property="iconCollection" destination="Sop-zU-e1b" collectionClass="NSMutableArray" id="aIQ-qk-zrC"/>
+                        <outletCollection property="iconCollection" destination="sow-WP-CTE" collectionClass="NSMutableArray" id="UH9-eU-EEY"/>
+                        <outletCollection property="iconCollection" destination="Kku-V5-rT8" collectionClass="NSMutableArray" id="c0R-kF-dI6"/>
+                        <outletCollection property="iconCollection" destination="J5d-SF-EBw" collectionClass="NSMutableArray" id="n1Q-Dw-kCm"/>
+                        <outletCollection property="iconCollection" destination="HGj-Es-gbk" collectionClass="NSMutableArray" id="dMs-bQ-GbC"/>
+                        <outletCollection property="iconCollection" destination="DHY-Fp-0Ft" collectionClass="NSMutableArray" id="t3i-I0-nbN"/>
+                        <outletCollection property="iconCollection" destination="hPS-Qz-V6L" collectionClass="NSMutableArray" id="2ap-Ze-EcX"/>
+                        <outletCollection property="iconCollection" destination="HV8-Og-35w" collectionClass="NSMutableArray" id="plJ-EK-4HP"/>
+                        <outletCollection property="iconCollection" destination="Q1c-Ev-elm" collectionClass="NSMutableArray" id="2ng-wu-hO8"/>
+                        <outletCollection property="iconCollection" destination="y1o-e9-905" collectionClass="NSMutableArray" id="ZqP-YH-osu"/>
+                        <outletCollection property="iconCollection" destination="Vg3-QJ-hdb" collectionClass="NSMutableArray" id="E3C-Ts-cjD"/>
+                        <outletCollection property="iconCollection" destination="L5K-oe-geA" collectionClass="NSMutableArray" id="V8J-4p-4Lr"/>
+                        <outletCollection property="iconCollection" destination="aQN-lP-sgj" collectionClass="NSMutableArray" id="fm5-4q-SUm"/>
+                        <outletCollection property="iconCollection" destination="Myl-02-d4S" collectionClass="NSMutableArray" id="8W6-KF-l79"/>
+                        <outletCollection property="xCollection" destination="Guj-5i-cCI" collectionClass="NSMutableArray" id="XwZ-4e-dfK"/>
+                        <outletCollection property="xCollection" destination="TKT-2D-Z5p" collectionClass="NSMutableArray" id="Hu9-2e-ZQi"/>
+                        <outletCollection property="xCollection" destination="EFI-fU-XYD" collectionClass="NSMutableArray" id="pqg-7z-14H"/>
+                        <outletCollection property="xCollection" destination="xYf-S6-iVF" collectionClass="NSMutableArray" id="aEx-mW-yXe"/>
+                        <outletCollection property="xCollection" destination="gPZ-3M-fcI" collectionClass="NSMutableArray" id="6nS-oD-u3I"/>
+                        <outletCollection property="xCollection" destination="tuC-gq-v1G" collectionClass="NSMutableArray" id="lAj-jv-Fge"/>
+                        <outletCollection property="yCollection" destination="bfm-gW-kmw" collectionClass="NSMutableArray" id="770-F2-eUq"/>
+                        <outletCollection property="yCollection" destination="tVh-Cc-eqR" collectionClass="NSMutableArray" id="Mgb-Nr-eeJ"/>
+                        <outletCollection property="yCollection" destination="1LG-nk-gK3" collectionClass="NSMutableArray" id="wq5-TL-otn"/>
+                        <outletCollection property="yCollection" destination="q7v-nS-1tG" collectionClass="NSMutableArray" id="YMq-rO-VlX"/>
+                        <outletCollection property="yCollection" destination="y7H-qp-MCA" collectionClass="NSMutableArray" id="mRX-Si-cdm"/>
+                        <outletCollection property="xCollection" destination="QcL-LS-HKd" collectionClass="NSMutableArray" id="xlu-ce-MDw"/>
+                        <outletCollection property="xCollection" destination="tSK-cz-ULo" collectionClass="NSMutableArray" id="3jY-z4-HhH"/>
+                        <outletCollection property="xCollection" destination="osL-U3-YBc" collectionClass="NSMutableArray" id="eGi-vz-41F"/>
+                        <outletCollection property="xCollection" destination="uZy-Hy-3Gy" collectionClass="NSMutableArray" id="eLU-VF-vSo"/>
+                        <outletCollection property="xCollection" destination="v9k-nK-WVw" collectionClass="NSMutableArray" id="ZsJ-M7-5B0"/>
+                        <outletCollection property="xCollection" destination="YBG-Kp-1bM" collectionClass="NSMutableArray" id="mje-DK-Hxd"/>
+                        <outletCollection property="xCollection" destination="Zse-bp-bA7" collectionClass="NSMutableArray" id="fAG-pv-ZVW"/>
+                        <outletCollection property="xCollection" destination="o5Z-Q6-bin" collectionClass="NSMutableArray" id="aC4-gm-74e"/>
+                        <outletCollection property="xCollection" destination="n8E-9p-udg" collectionClass="NSMutableArray" id="w1C-su-cxZ"/>
+                        <outletCollection property="xCollection" destination="qvc-Hx-DG0" collectionClass="NSMutableArray" id="OJw-p4-ma0"/>
+                        <outletCollection property="yCollection" destination="gdK-Ty-i0E" collectionClass="NSMutableArray" id="Zjb-k9-0Qn"/>
+                        <outletCollection property="yCollection" destination="WOZ-iU-Mj7" collectionClass="NSMutableArray" id="fwx-SA-gEw"/>
+                        <outletCollection property="yCollection" destination="pvg-28-LnJ" collectionClass="NSMutableArray" id="K1l-a1-W8U"/>
+                        <outletCollection property="yCollection" destination="VE6-dr-3NX" collectionClass="NSMutableArray" id="XOb-V7-lXu"/>
+                        <outletCollection property="yCollection" destination="jfK-H7-3wY" collectionClass="NSMutableArray" id="8lm-dX-XqP"/>
+                        <outletCollection property="yCollection" destination="umF-Sh-NB6" collectionClass="NSMutableArray" id="1a7-hQ-KeO"/>
+                        <outletCollection property="yCollection" destination="LDP-Pa-7a8" collectionClass="NSMutableArray" id="1nL-oB-CUW"/>
+                        <outletCollection property="yCollection" destination="LgW-SZ-DKc" collectionClass="NSMutableArray" id="Flr-hh-gmE"/>
+                        <outletCollection property="yCollection" destination="fon-yy-ihh" collectionClass="NSMutableArray" id="lNF-cs-hul"/>
+                        <outletCollection property="yCollection" destination="ZTt-db-fnN" collectionClass="NSMutableArray" id="Qx2-hQ-CEh"/>
+                        <outletCollection property="yCollection" destination="U3B-qW-I5Q" collectionClass="NSMutableArray" id="tpj-uJ-HLH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSr-Jp-cX4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="cFv-US-xLf">
                     <connections>
-                        <action selector="panApple:" destination="GEg-oy-c2Q" id="cv5-D4-pOT"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="vgE-yI-8oe"/>
                         <outlet property="delegate" destination="GEg-oy-c2Q" id="UjU-gm-WWA"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="mPK-I3-8hb">
                     <connections>
-                        <action selector="panBanana:" destination="GEg-oy-c2Q" id="5Rj-4d-ad2"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="FlQ-Ge-Lws"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="e1q-rP-Fcf">
                     <connections>
-                        <action selector="panTomato:" destination="GEg-oy-c2Q" id="iSv-CT-lPX"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="7nL-Ie-eYP"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="dXV-i7-SO9">
                     <connections>
-                        <action selector="panOrange:" destination="GEg-oy-c2Q" id="WEm-Ps-PRM"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="nx4-dv-aZf"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Hnu-zh-EGx">
                     <connections>
-                        <action selector="panHeart:" destination="GEg-oy-c2Q" id="XI9-nT-OqE"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="8DU-Mb-Kca"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Fds-LS-kbJ">
                     <connections>
-                        <action selector="panEye:" destination="GEg-oy-c2Q" id="0iK-4e-kYG"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="DIx-l8-Jkc"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="iaQ-pi-9ED">
                     <connections>
-                        <action selector="panBeauty:" destination="GEg-oy-c2Q" id="GCY-ZX-Rwc"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="N7B-fL-1gy"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="TOW-dA-zuf">
                     <connections>
-                        <action selector="panDiet:" destination="GEg-oy-c2Q" id="Bxp-hC-UjZ"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="7s5-Ww-FYH"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="sVn-bl-NgG">
                     <connections>
-                        <action selector="panNervous:" destination="GEg-oy-c2Q" id="xwd-X1-OhL"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="Z2f-do-tPq"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="dik-dr-GGk">
                     <connections>
-                        <action selector="panUnhappy:" destination="GEg-oy-c2Q" id="4M1-io-nb3"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="Z6U-vf-tUs"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Wci-WY-e5c">
                     <connections>
-                        <action selector="panTired:" destination="GEg-oy-c2Q" id="i0j-HF-0Db"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="0dk-R7-uJ6"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="04h-qB-gvp">
                     <connections>
-                        <action selector="panHappy:" destination="GEg-oy-c2Q" id="XWe-EX-Qns"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="SuI-bN-NqY"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="3Po-R7-Usu">
                     <connections>
-                        <action selector="panSweet:" destination="GEg-oy-c2Q" id="m2u-sR-9By"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="ubc-WX-tKY"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Mlz-kh-DEq">
                     <connections>
-                        <action selector="panBitter:" destination="GEg-oy-c2Q" id="IRo-JR-NDN"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="cMr-Wf-NGJ"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="iNx-Er-1xY">
                     <connections>
-                        <action selector="panFresh:" destination="GEg-oy-c2Q" id="oIH-td-TX3"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="JsE-c0-O3b"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Rxc-NM-CQ4">
                     <connections>
-                        <action selector="panMild:" destination="GEg-oy-c2Q" id="sDN-Fr-NQJ"/>
+                        <action selector="pan1:" destination="GEg-oy-c2Q" id="C0d-Ni-7yT"/>
                     </connections>
                 </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="2wD-jH-1yd"/>
             </objects>
             <point key="canvasLocation" x="752.5" y="287.5"/>
         </scene>
@@ -560,6 +561,8 @@
         <image name="nervous.png" width="350" height="350"/>
         <image name="skin.png" width="350" height="350"/>
         <image name="snowman.png" width="320" height="322"/>
+        <image name="spring.png" width="1106" height="690"/>
+        <image name="summer.png" width="631" height="310"/>
         <image name="sweet.png" width="320" height="322"/>
         <image name="tired2.png" width="350" height="350"/>
         <image name="top.png" width="304" height="136"/>

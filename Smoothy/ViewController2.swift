@@ -10,18 +10,24 @@ import UIKit
 
 class ViewController2: UIViewController {
 
+    @IBOutlet var iconCollection: [UIImageView]!
+    //季節   0-3　spring,summer,fall,winter
+    //味　   4-7　sweet,bitter,fresh,mild
+    //気分  8-11　happy,unhappy,tired,nervous
+    //効能 12-15　diet,beauty,eye,heart
     
     //16個のアイコン表示のためのUIImageView
+    /*
     @IBOutlet weak var apple: UIImageView!
     @IBOutlet weak var banana: UIImageView!
     @IBOutlet weak var tomato: UIImageView!
     @IBOutlet weak var orange: UIImageView!
-    
+    */
     /*@IBOutlet var spring: UIImageView!
     @IBOutlet var summer: UIImageView!
     @IBOutlet var fall: UIImageView!
     @IBOutlet var winter: UIImageView!*/
-    
+    /*
     @IBOutlet var sweet: UIImageView!
     @IBOutlet var bitter: UIImageView!
     @IBOutlet var fresh: UIImageView!
@@ -37,9 +43,12 @@ class ViewController2: UIViewController {
     @IBOutlet var eye: UIImageView!
     @IBOutlet var heart: UIImageView!
     
-  
+  */
     //アイコンのXY
-    @IBOutlet weak var appleX: NSLayoutConstraint!
+    @IBOutlet var xCollection: [NSLayoutConstraint]!
+    @IBOutlet var yCollection: [NSLayoutConstraint]!
+    
+   /* @IBOutlet weak var appleX: NSLayoutConstraint!
     @IBOutlet weak var appleY: NSLayoutConstraint!
     @IBOutlet weak var bananaX: NSLayoutConstraint!
     @IBOutlet weak var bananaY: NSLayoutConstraint!
@@ -74,11 +83,10 @@ class ViewController2: UIViewController {
     @IBOutlet weak var eyeY: NSLayoutConstraint!
     @IBOutlet weak var heartX: NSLayoutConstraint!
     @IBOutlet weak var heartY: NSLayoutConstraint!
-    
+    */
     
     
     @IBOutlet var checkLabel: UILabel!
-    
     
     @IBOutlet var shakeLabel: UILabel!
     @IBOutlet var topLabel: UILabel!
@@ -87,12 +95,6 @@ class ViewController2: UIViewController {
 
     //ミキサーに入ったかどうかを確認する配列
     var iconArray:[Bool]=[false,false,false,false, false,false,false,false, false,false,false,false, false,false,false,false]
-    
-    
-    /*ここから付け足す*/
-    //非表示　　falseが表示　trueが非表示
-    var hiddenArray:[Bool] = [false,false,false,false, true,true,true,true, true,true,true,true, true,true,true,true]
-    /*ここまで*/
     
     
     //checkメソッドで使った変数
@@ -105,21 +107,9 @@ class ViewController2: UIViewController {
         super.viewDidLoad()
         
         //初期状態で季節アイコン以外を非表示にする
-        sweet.hidden = true
-        bitter.hidden = true
-        fresh.hidden = true
-        mild.hidden = true
-        
-        happy.hidden = true
-        unhappy.hidden = true
-        tired.hidden = true
-        nervous.hidden = true
-        
-        diet.hidden = true
-        beauty.hidden = true
-        eye.hidden = true
-        heart.hidden = true
-        
+        for i in 4...15 {
+            iconCollection[i].hidden = true
+        }
         
         // Do any additional setup after loading the view.
     }
@@ -128,8 +118,41 @@ class ViewController2: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
+    @IBAction func pan1(sender: UIPanGestureRecognizer) {
+    
+        //移動量を取得する。
+        let move:CGPoint = sender.translationInView(view)
+        
+        let i = sender.view!.tag
+        
+        //ラベルの位置の制約に移動量を加算する。
+        xCollection[i].constant += move.x
+        yCollection[i].constant += move.y
+        
+        //画面表示を更新する。
+        view.layoutIfNeeded()
+        
+        let x =  (sender.view!.center.x)
+        let y =  (sender.view!.center.y)
+        
+        if(check(x,y:y) == true){
+            print("In")
+            iconArray[i] = true
+        }else{
+            print("Out")
+            iconArray[i] = false
+        }
+        
+        //移動量を0にする。
+        sender.setTranslation(CGPointZero, inView:view)
+        
+        checkArray(iconArray)
+
+    }
+    
+
+    /*
     //季節
     @IBAction func panApple(sender: UIPanGestureRecognizer) {
         //移動量を取得する。
@@ -139,6 +162,11 @@ class ViewController2: UIViewController {
         appleX.constant += move.x
         appleY.constant += move.y
         
+     
+     appleX -> xCollection[0]
+     appleY -> yCollection[0]
+     
+     
         //画面表示を更新する。
         view.layoutIfNeeded()
 
@@ -473,6 +501,7 @@ class ViewController2: UIViewController {
         }
         sender.setTranslation(CGPointZero, inView:view)
     }
+ */
     
     //ミキサーに物が入ったか判別するメソッド
     func check(x:CGFloat,y:CGFloat) -> Bool{
@@ -484,23 +513,12 @@ class ViewController2: UIViewController {
         return isIn
     }
     
-    //アイコンがラベル以外の場所にあるか判別する
-    func iconCheck(x:CGFloat,y:CGFloat)-> Bool {
-        if((x >= 0 && x <= 375) && (y >= 0 && y <= 85)) {
-            iconisIn = true
-        } else {
-            iconisIn = false
-        }
-        return iconisIn
-    }
     
-    
-    
-    //配列の要素が4つtrueだったら
+    //配列の要素が16こtrueだったら
     func checkArray(fruit:[Bool]){
         
         var flag = true
-        for i in 0 ..< 4 {
+        for i in 0 ..< 16 {
             if(fruit[i] == false){
                flag = false
             }
@@ -543,119 +561,102 @@ class ViewController2: UIViewController {
     
     
     
-    @IBAction func seasonButton() {
-        
-        apple.hidden = false
-        banana.hidden = false
-        tomato.hidden = false
-        orange.hidden = false
-        
-        /*spring.hidden = false
-        summer.hidden = false
-        fall.hidden = false
-        winter.hidden = false*/
-   
-        sweet.hidden = true
-        bitter.hidden = true
-        fresh.hidden = true
-        mild.hidden = true
-        
-        happy.hidden = true
-        unhappy.hidden = true
-        tired.hidden = true
-        nervous.hidden = true
-        
-        diet.hidden = true
-        beauty.hidden = true
-        eye.hidden = true
-        heart.hidden = true
+    //アイコンがラベル以外の場所にあるか判別する
+    func iconCheck(x:CGFloat,y:CGFloat)-> Bool {
+        if((x >= 0 && x <= 375) && (y >= 0 && y <= 85)) {
+            iconisIn = true         //ラベルに入っている->非表示にする
+        } else {
+            iconisIn = false        //ラベルに入っていない->表示する
+        }
+        return iconisIn
+    }
     
+    @IBAction func tabButton(sender: UIButton) {
+        
+        for i in 0...15 {
+            let x =  (iconCollection[i].center.x)
+            let y =  (iconCollection[i].center.y)
+            iconCheck(x, y: y)
+            if iconisIn == true {
+                iconCollection[i].hidden = true
+            }
+            for j in sender.tag...sender.tag+3 {
+                iconCollection[j].hidden = false
+            }
+        }
+
+        
+    }
+  /*
+    @IBAction func seasonButton() {
+        //spring,summer,fall,winter
+        
+        for i in 0...15 {
+            let x =  (iconCollection[i].center.x)
+            let y =  (iconCollection[i].center.y)
+            iconCheck(x, y: y)
+            if iconisIn == true {
+                iconCollection[i].hidden = true
+            }
+            for j in 0...3 {
+                iconCollection[j].hidden = false
+            }
+        }
         
     }
     
     @IBAction func tasteButton() {
+        //sweet,bitter,fresh,mild
         
-        
-        apple.hidden = true
-        banana.hidden = true
-        tomato.hidden = true
-        orange.hidden = true
-        
-        /*spring.hidden = true
-        summer.hidden = true
-        fall.hidden = true
-        winter.hidden = true*/
-        
-        sweet.hidden = false
-        bitter.hidden = false
-        fresh.hidden = false
-        mild.hidden = false
-        
-        happy.hidden = true
-        unhappy.hidden = true
-        tired.hidden = true
-        nervous.hidden = true
-        
-        diet.hidden = true
-        beauty.hidden = true
-        eye.hidden = true
-        heart.hidden = true
+        for i in 0...15 {
+            let x =  (iconCollection[i].center.x)
+            let y =  (iconCollection[i].center.y)
+            iconCheck(x, y: y)
+            if iconisIn == true {
+                iconCollection[i].hidden = true
+            }
+            for j in 4...7 {
+                iconCollection[j].hidden = false
+            }
+        }
+
         
     }
     
     @IBAction func feelingButton() {
-        apple.hidden = true
-        banana.hidden = true
-        tomato.hidden = true
-        orange.hidden = true
+        //happy,unhappy,tired,nervous
         
-        /*spring.hidden = true
-        summer.hidden = true
-        fall.hidden = true
-        winter.hidden = true*/
-        
-        sweet.hidden = true
-        bitter.hidden = true
-        fresh.hidden = true
-        mild.hidden = true
-        
-        happy.hidden = false
-        unhappy.hidden = false
-        tired.hidden = false
-        nervous.hidden = false
-        
-        diet.hidden = true
-        beauty.hidden = true
-        eye.hidden = true
-        heart.hidden = true
+        for i in 0...15 {
+            let x =  (iconCollection[i].center.x)
+            let y =  (iconCollection[i].center.y)
+            iconCheck(x, y: y)
+            if iconisIn == true {
+                iconCollection[i].hidden = true
+            }
+            for j in 8...11 {
+                iconCollection[j].hidden = false
+            }
+        }
+
         
     }
     
     @IBAction func efficacyButton() {
-        apple.hidden = true
-        banana.hidden = true
-        tomato.hidden = true
-        orange.hidden = true
-        /*spring.hidden = true
-        summer.hidden = true
-        fall.hidden = true
-        winter.hidden = true*/
+        //diet,beauty,eye,heart
         
-        sweet.hidden = true
-        bitter.hidden = true
-        fresh.hidden = true
-        mild.hidden = true
-        
-        happy.hidden = true
-        unhappy.hidden = true
-        tired.hidden = true
-        nervous.hidden = true
-        
-        diet.hidden = false
-        beauty.hidden = false
-        eye.hidden = false
-        heart.hidden = false
-    }
+        for i in 0...15 {
+            let x =  (iconCollection[i].center.x)
+            let y =  (iconCollection[i].center.y)
+            iconCheck(x, y: y)
+            if iconisIn == true {
+                iconCollection[i].hidden = true
+            }
+            for j in 12...15 {
+                iconCollection[j].hidden = false
+            }
+        }
+
+    }*/
     
 
     /*
