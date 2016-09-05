@@ -92,9 +92,9 @@ class ViewController2: UIViewController {
     
     
     @IBOutlet var checkLabel: UILabel!
-    
     @IBOutlet var shakeLabel: UILabel!
     @IBOutlet var topLabel: UILabel!
+    @IBOutlet var topImage: UIImageView!
     
     //シェイクした回数を数える変数
     var shake = 0
@@ -569,27 +569,6 @@ class ViewController2: UIViewController {
         
     }*/
     
-    //蓋をしめた時のメソッド
-    @IBAction func topClose(){
-        
-        for i in 0 ..< 4 {
-            if(iconArray[i] == false){
-                top = false
-            }
-        }
-        
-        top = true
-        print("蓋をしめた")
-        play(1)
-        
-        //ミキサーの音流す
-        //play(0)
-        
-        //    topLabel.origin.x = 155
-        //   topLabel.origin.y = 260
-        
-    }
-    
     //振って次の画面に行く
     override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
         
@@ -673,6 +652,36 @@ class ViewController2: UIViewController {
 
         
     }
+    
+   //蓋をしめた時のメソッド
+    @IBAction func topClose(){
+        
+        //  image1.center = CGPointMake(50, 300)
+        UIView.beginAnimations(nil, context: nil)
+        UIView.setAnimationDuration(1)
+        UIView.setAnimationCurve(UIViewAnimationCurve.EaseInOut)
+        topImage.center = CGPointMake(120, 253)
+        
+      /*  var topCount:Int = 0
+        for i in 0 ..< 16 {
+            if(iconArray[i] == true){
+                topCount = topCount + 1
+            }
+        }
+        
+        top = true
+        print("蓋をしめた")
+        play(1)*/
+        
+        //ミキサーの音流す
+        //play(0)
+        
+        
+        
+        
+        
+    }
+
   /*
     @IBAction func seasonButton() {
         //spring,summer,fall,winter

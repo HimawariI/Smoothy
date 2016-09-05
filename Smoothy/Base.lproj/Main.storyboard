@@ -161,12 +161,6 @@
                                     <outletCollection property="gestureRecognizers" destination="dXV-i7-SO9" appends="YES" id="aJ9-uo-lrM"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sZ-4J-lIE">
-                                <rect key="frame" x="206" y="527" width="149" height="60"/>
-                                <state key="normal" backgroundImage="top.png">
-                                    <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og5-y5-VkB">
                                 <rect key="frame" x="5" y="85" width="80" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
@@ -342,6 +336,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mixer.png" translatesAutoresizingMaskIntoConstraints="NO" id="5a0-az-eCP">
                                 <rect key="frame" x="27" y="229" width="184" height="367"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top.png" translatesAutoresizingMaskIntoConstraints="NO" id="dAV-QD-Iyg">
+                                <rect key="frame" x="199" y="506" width="169" height="79"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WR-38-zCd">
+                                <rect key="frame" x="203" y="518" width="161" height="56"/>
+                                <connections>
+                                    <action selector="topClose" destination="GEg-oy-c2Q" eventType="touchUpInside" id="R4q-b4-fEh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -383,6 +386,7 @@
                     <connections>
                         <outlet property="checkLabel" destination="9KX-ub-dAY" id="x8i-ha-jtX"/>
                         <outlet property="shakeLabel" destination="hGl-Ho-GX7" id="4nr-9t-tjo"/>
+                        <outlet property="topImage" destination="dAV-QD-Iyg" id="koW-fU-gkt"/>
                         <outletCollection property="iconCollection" destination="68G-n8-MQ1" collectionClass="NSMutableArray" id="DRC-PG-ZCe"/>
                         <outletCollection property="iconCollection" destination="3gZ-cE-8eF" collectionClass="NSMutableArray" id="yfq-SD-OsP"/>
                         <outletCollection property="iconCollection" destination="Sop-zU-e1b" collectionClass="NSMutableArray" id="aIQ-qk-zrC"/>
@@ -538,6 +542,21 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="Lhv-av-Ebm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スムージー名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z83-zS-hIm">
+                                <rect key="frame" x="136" y="40" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBK-pD-cEz">
+                                <rect key="frame" x="67" y="78" width="240" height="225"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="材料" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyR-IM-1dc">
+                                <rect key="frame" x="170" y="344" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
