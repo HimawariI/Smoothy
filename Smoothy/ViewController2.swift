@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
+import AudioToolbox
 
 class ViewController2: UIViewController {
+    
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 
+    
     @IBOutlet var iconCollection: [UIImageView]!
     //季節   0-3　spring,summer,fall,winter
     //味　   4-7　sweet,bitter,fresh,mild
@@ -90,6 +95,13 @@ class ViewController2: UIViewController {
     
     @IBOutlet var shakeLabel: UILabel!
     @IBOutlet var topLabel: UILabel!
+    
+    //シェイクした回数を数える変数
+    var shake = 0
+    var players:[AVAudioPlayer]!
+    //音楽が入っている配列
+    let audioFiles = ["mix","close","in","out"]
+    
     //蓋閉めたか
     var top = true
 
@@ -106,11 +118,18 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //オープニングの曲を止める
+        appDelegate.audioPlayer.stop()
+        appDelegate.audioPlayer.currentTime = 0.0
+        
+        
         //初期状態で季節アイコン以外を非表示にする
         for i in 4...15 {
             iconCollection[i].hidden = true
         }
         
+        //音楽のセットアップ
+        setup()
         // Do any additional setup after loading the view.
     }
     
@@ -139,6 +158,7 @@ class ViewController2: UIViewController {
         if(check(x,y:y) == true){
             print("In")
             iconArray[i] = true
+            play(2)
         }else{
             print("Out")
             iconArray[i] = false
@@ -535,7 +555,7 @@ class ViewController2: UIViewController {
         
     }
     
-    @IBAction func topClose(){
+   /* @IBAction func topClose(){
     
         for i in 0 ..< 4 {
             if(iconArray[i] == false){
@@ -547,16 +567,82 @@ class ViewController2: UIViewController {
     //    topLabel.origin.x = 155
      //   topLabel.origin.y = 260
         
+    }*/
+    
+    //蓋をしめた時のメソッド
+    @IBAction func topClose(){
+        
+        for i in 0 ..< 4 {
+            if(iconArray[i] == false){
+                top = false
+            }
+        }
+        
+        top = true
+        print("蓋をしめた")
+        play(1)
+        
+        //ミキサーの音流す
+        //play(0)
+        
+        //    topLabel.origin.x = 155
+        //   topLabel.origin.y = 260
+        
     }
+    
+    //振って次の画面に行く
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        
+        if(top == true){
+            //蓋が閉まっているとき、振っている回数をカウント
+            if (event?.subtype == UIEventSubtype.MotionShake && event?.type == UIEventType.Motion){
+                play(0)
+                shake = shake + 1
+                print(shake)
+                shakeLabel.text = "shake shake!!"
+                //バイブ
+                AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+            }
+            if(shake >= 10){
+                self.performSegueWithIdentifier("next", sender: self)
+                print("次の画面にいきまーす")
+                players[0].stop()
+                
+            }
+        }
+        
+    }
+    
+    //音楽を流すメソッド
+    func play(n:Int) {
+        if n < players.count {
+            players[n].play()
+        }
+    }
+    //音楽のセットアップ
+    func setup() {
+        players = []
+        for fname in audioFiles {
+            let path = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(fname, ofType: "mp3")!)
+            do {
+                let player = try AVAudioPlayer(contentsOfURL:path)
+                players.append(player)
+            } catch let error as NSError {
+                print("error has occurred: \(error)")
+            }
+        }
+    }
+    
+
 
     
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+  /*  override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         shakeLabel.text = "shake shake!!"
         if top == true {
         self.performSegueWithIdentifier("next", sender: self)
         }
         
-    }
+    }*/
     
     
     

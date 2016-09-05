@@ -43,7 +43,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="244.5" y="277.5"/>
+            <point key="canvasLocation" x="276.5" y="287.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Zbx-8h-xMO">
@@ -545,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INW-zS-bBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1307.5" y="277.5"/>
+            <point key="canvasLocation" x="1237.5" y="287.5"/>
         </scene>
     </scenes>
     <resources>
