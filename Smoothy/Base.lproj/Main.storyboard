@@ -118,7 +118,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVP-UL-NpK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
-                                <color key="backgroundColor" red="0.7803921568627451" green="0.71372549019607845" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.83921568627450982" green="0.76862745098039209" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -181,7 +181,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og5-y5-VkB">
                                 <rect key="frame" x="0.0" y="85" width="90" height="30"/>
-                                <color key="backgroundColor" red="0.5" green="0.45850271106164331" blue="0.41425070742874559" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.83921568627450982" green="0.76862745098039209" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="季節">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -190,8 +190,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-wl-kgW">
-                                <rect key="frame" x="95" y="85" width="87" height="30"/>
-                                <color key="backgroundColor" red="0.71764705882352942" green="0.63137254901960782" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="95" y="85" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.78823529411764703" green="0.69411764705882351" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="風味">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -201,7 +201,7 @@
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yga-7G-ID9">
                                 <rect key="frame" x="190" y="85" width="90" height="30"/>
-                                <color key="backgroundColor" red="0.65490196078431373" green="0.5490196078431373" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.73333333333333328" green="0.61568627450980395" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="気分">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -209,14 +209,14 @@
                                     <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="Cfb-Do-UfQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB9-7v-uxE">
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB9-7v-uxE">
                                 <rect key="frame" x="285" y="85" width="90" height="30"/>
-                                <color key="backgroundColor" red="0.5" green="0.42752238279550542" blue="0.34359748888682529" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.46274509803921571" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="効能">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="JVV-yn-c6z"/>
+                                    <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="AEF-RS-w4s"/>
                                 </connections>
                             </button>
                             <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sweet.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kku-V5-rT8">

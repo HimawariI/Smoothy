@@ -53,7 +53,7 @@ class ViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         //オープニングの曲を止める
         appDelegate.audioPlayer.stop()
         appDelegate.audioPlayer.currentTime = 0.0
@@ -220,6 +220,7 @@ class ViewController2: UIViewController {
 
         if sender.tag == 0 {
             iconLabel.backgroundColor = UIColor(red: 214/255.0, green: 196/255.0, blue: 177/255.0, alpha: 1.0)
+
         } else if sender.tag == 4 {
             iconLabel.backgroundColor = UIColor(red: 201/255.0, green: 177/255.0, blue: 151/255.0, alpha: 1.0)
         } else if sender.tag == 8 {
