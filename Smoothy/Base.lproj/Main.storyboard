@@ -18,19 +18,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61H-f6-gqo">
-                                <rect key="frame" x="136" y="487" width="123" height="54"/>
-                                <state key="normal" title="説明"/>
+                                <rect key="frame" x="32" y="517" width="323" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="説明" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="bud-au-Brw" kind="presentation" id="cs1-0o-WAe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4y-HG-nuT">
-                                <rect key="frame" x="117" y="418" width="140" height="40"/>
-                                <state key="normal" title="スタート"/>
+                                <rect key="frame" x="32" y="393" width="314" height="95"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="スタート" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="GEg-oy-c2Q" kind="presentation" id="e8d-jF-KSm"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gingham.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Knm-RE-vQi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -165,7 +174,7 @@
                                 <rect key="frame" x="0.0" y="85" width="90" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="季節">
-                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="rHP-tq-zkg"/>
@@ -175,7 +184,7 @@
                                 <rect key="frame" x="95" y="85" width="90" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="風味">
-                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="Bpi-Q0-ntI"/>
@@ -185,7 +194,7 @@
                                 <rect key="frame" x="190" y="85" width="90" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="気分">
-                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="Cfb-Do-UfQ"/>
@@ -195,7 +204,7 @@
                                 <rect key="frame" x="285" y="85" width="90" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="効能">
-                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="tabButton:" destination="GEg-oy-c2Q" eventType="touchUpInside" id="JVV-yn-c6z"/>
@@ -578,9 +587,11 @@
     </scenes>
     <resources>
         <image name="bitt.png" width="320" height="322"/>
+        <image name="button.png" width="326" height="93"/>
         <image name="diet.png" width="350" height="350"/>
         <image name="eye.png" width="350" height="350"/>
         <image name="fresh.png" width="320" height="322"/>
+        <image name="gingham.jpg" width="1280" height="1232"/>
         <image name="happy.png" width="350" height="350"/>
         <image name="health3.png" width="350" height="350"/>
         <image name="imomushiman.png" width="320" height="322"/>
