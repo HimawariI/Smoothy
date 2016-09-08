@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61H-f6-gqo">
-                                <rect key="frame" x="115" y="450" width="123" height="54"/>
+                                <rect key="frame" x="136" y="487" width="123" height="54"/>
                                 <state key="normal" title="説明"/>
                                 <connections>
                                     <segue destination="bud-au-Brw" kind="presentation" id="cs1-0o-WAe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4y-HG-nuT">
-                                <rect key="frame" x="106" y="181" width="140" height="40"/>
+                                <rect key="frame" x="117" y="418" width="140" height="40"/>
                                 <state key="normal" title="スタート"/>
                                 <connections>
                                     <segue destination="GEg-oy-c2Q" kind="presentation" id="e8d-jF-KSm"/>
@@ -590,8 +590,8 @@
         <image name="pahu.png" width="234" height="219"/>
         <image name="skin.png" width="350" height="350"/>
         <image name="snowman.png" width="320" height="322"/>
-        <image name="spring.png" width="1106" height="690"/>
-        <image name="summer.png" width="631" height="310"/>
+        <image name="spring.png" width="320" height="322"/>
+        <image name="summer.png" width="320" height="322"/>
         <image name="sweet.png" width="320" height="322"/>
         <image name="tired2.png" width="350" height="350"/>
         <image name="top.png" width="304" height="136"/>
