@@ -10,6 +10,15 @@ import UIKit
 import AVFoundation
 
 class FinalViewController: UIViewController {
+    
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var ingreLabel: UILabel!
+    
+    @IBOutlet var smImage: UIImageView!
+    
+    var name: String!
+    var ingre: String!
+   // var sm: UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()

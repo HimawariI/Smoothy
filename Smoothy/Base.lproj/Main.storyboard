@@ -162,7 +162,7 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og5-y5-VkB">
-                                <rect key="frame" x="5" y="85" width="80" height="30"/>
+                                <rect key="frame" x="0.0" y="85" width="90" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="季節">
                                     <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -172,7 +172,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-wl-kgW">
-                                <rect key="frame" x="95" y="85" width="80" height="30"/>
+                                <rect key="frame" x="95" y="85" width="90" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="風味">
                                     <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -182,7 +182,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yga-7G-ID9">
-                                <rect key="frame" x="183" y="85" width="80" height="30"/>
+                                <rect key="frame" x="190" y="85" width="90" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="気分">
                                     <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -192,7 +192,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB9-7v-uxE">
-                                <rect key="frame" x="271" y="85" width="80" height="30"/>
+                                <rect key="frame" x="285" y="85" width="90" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="効能">
                                     <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -345,6 +345,9 @@
                                     <action selector="topClose" destination="GEg-oy-c2Q" eventType="touchUpInside" id="R4q-b4-fEh"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pahu.png" translatesAutoresizingMaskIntoConstraints="NO" id="R70-fE-8mb">
+                                <rect key="frame" x="199" y="189" width="87" height="75"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -385,6 +388,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="checkLabel" destination="9KX-ub-dAY" id="x8i-ha-jtX"/>
+                        <outlet property="pahuImage" destination="R70-fE-8mb" id="3Ui-0h-CJs"/>
                         <outlet property="shakeLabel" destination="hGl-Ho-GX7" id="4nr-9t-tjo"/>
                         <outlet property="topImage" destination="dAV-QD-Iyg" id="koW-fU-gkt"/>
                         <outletCollection property="iconCollection" destination="68G-n8-MQ1" collectionClass="NSMutableArray" id="DRC-PG-ZCe"/>
@@ -561,6 +565,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ingreLabel" destination="eyR-IM-1dc" id="59Z-wD-5n1"/>
+                        <outlet property="nameLabel" destination="Z83-zS-hIm" id="dVc-qz-oZ2"/>
+                        <outlet property="smImage" destination="IBK-pD-cEz" id="f8x-9Z-HWF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INW-zS-bBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -578,6 +587,7 @@
         <image name="mild.png" width="320" height="322"/>
         <image name="mixer.png" width="328" height="699"/>
         <image name="nervous.png" width="350" height="350"/>
+        <image name="pahu.png" width="234" height="219"/>
         <image name="skin.png" width="350" height="350"/>
         <image name="snowman.png" width="320" height="322"/>
         <image name="spring.png" width="1106" height="690"/>
