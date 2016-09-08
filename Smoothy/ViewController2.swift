@@ -219,13 +219,15 @@ class ViewController2: UIViewController {
         }
 
         if sender.tag == 0 {
-            iconLabel.backgroundColor = UIColor(red: 214, green: 196, blue: 177, alpha: 1.0)
+            iconLabel.backgroundColor = UIColor(red: 214/255.0, green: 196/255.0, blue: 177/255.0, alpha: 1.0)
         } else if sender.tag == 4 {
-            iconLabel.backgroundColor = UIColor(red: 201, green: 177, blue: 151, alpha: 1.0)
+            iconLabel.backgroundColor = UIColor(red: 201/255.0, green: 177/255.0, blue: 151/255.0, alpha: 1.0)
         } else if sender.tag == 8 {
-            iconLabel.backgroundColor = UIColor(red: 187, green: 157, blue: 125, alpha: 1.0)
+            iconLabel.backgroundColor = UIColor(red: 187/255.0, green: 157/255.0, blue: 125/255.0, alpha: 1.0)
+        } else if sender.tag == 12 {
+            iconLabel.backgroundColor = UIColor(red: 140/255.0, green: 118/255.0, blue: 94/255.0, alpha: 1.0)
         } else {
-            iconLabel.backgroundColor = UIColor(red: 140, green: 118, blue: 94, alpha: 1.0)
+            
         }
 
         
