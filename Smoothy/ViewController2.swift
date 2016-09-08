@@ -30,6 +30,7 @@ class ViewController2: UIViewController {
     @IBOutlet var topLabel: UILabel!
     @IBOutlet var topImage: UIImageView!
     @IBOutlet var pahuImage: UIImageView!
+    @IBOutlet var iconLabel: UILabel!
     
     //シェイクした回数を数える変数
     var shake = 0
@@ -201,6 +202,8 @@ class ViewController2: UIViewController {
         return iconisIn
     }
     
+ 
+    
     @IBAction func tabButton(sender: UIButton) {
         
         for i in 0...15 {
@@ -213,6 +216,16 @@ class ViewController2: UIViewController {
             for j in sender.tag...sender.tag+3 {
                 iconCollection[j].hidden = false
             }
+        }
+
+        if sender.tag == 0 {
+            iconLabel.backgroundColor = UIColor(red: 214, green: 196, blue: 177, alpha: 1.0)
+        } else if sender.tag == 4 {
+            iconLabel.backgroundColor = UIColor(red: 201, green: 177, blue: 151, alpha: 1.0)
+        } else if sender.tag == 8 {
+            iconLabel.backgroundColor = UIColor(red: 187, green: 157, blue: 125, alpha: 1.0)
+        } else {
+            iconLabel.backgroundColor = UIColor(red: 140, green: 118, blue: 94, alpha: 1.0)
         }
 
         

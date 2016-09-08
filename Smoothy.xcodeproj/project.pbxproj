@@ -58,6 +58,9 @@
 		D08D1EAE1D81FA580026EA79 /* spring.png in Resources */ = {isa = PBXBuildFile; fileRef = D08D1EAD1D81FA580026EA79 /* spring.png */; };
 		D08D1EB01D81FCFE0026EA79 /* summer.png in Resources */ = {isa = PBXBuildFile; fileRef = D08D1EAF1D81FCFE0026EA79 /* summer.png */; };
 		D08D1EB41D82036F0026EA79 /* gingham.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D08D1EB31D82036F0026EA79 /* gingham.jpg */; };
+		D08D1EB61D8205140026EA79 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = D08D1EB51D8205140026EA79 /* button.png */; };
+		D08D1EB81D82056C0026EA79 /* topname.png in Resources */ = {isa = PBXBuildFile; fileRef = D08D1EB71D82056C0026EA79 /* topname.png */; };
+		D08D1EBA1D82067F0026EA79 /* uzura.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08D1EB91D82067F0026EA79 /* uzura.ttf */; };
 		D0C29DC91D71CE40005982F1 /* mixer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0C29DC41D71CE40005982F1 /* mixer.jpg */; };
 		D0C29EF11D76A957005982F1 /* mixer.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29EEF1D76A957005982F1 /* mixer.png */; };
 		D0C29EF21D76A957005982F1 /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C29EF01D76A957005982F1 /* top.png */; };
@@ -155,6 +158,9 @@
 		D08D1EAD1D81FA580026EA79 /* spring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spring.png; sourceTree = "<group>"; };
 		D08D1EAF1D81FCFE0026EA79 /* summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = summer.png; sourceTree = "<group>"; };
 		D08D1EB31D82036F0026EA79 /* gingham.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gingham.jpg; sourceTree = "<group>"; };
+		D08D1EB51D8205140026EA79 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		D08D1EB71D82056C0026EA79 /* topname.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topname.png; sourceTree = "<group>"; };
+		D08D1EB91D82067F0026EA79 /* uzura.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = uzura.ttf; sourceTree = "<group>"; };
 		D0C29DC41D71CE40005982F1 /* mixer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mixer.jpg; sourceTree = "<group>"; };
 		D0C29EEF1D76A957005982F1 /* mixer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixer.png; sourceTree = "<group>"; };
 		D0C29EF01D76A957005982F1 /* top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top.png; sourceTree = "<group>"; };
@@ -228,6 +234,9 @@
 		219957B01D7120910017D0C8 /* Smoothy */ = {
 			isa = PBXGroup;
 			children = (
+				D08D1EB91D82067F0026EA79 /* uzura.ttf */,
+				D08D1EB71D82056C0026EA79 /* topname.png */,
+				D08D1EB51D8205140026EA79 /* button.png */,
 				D08D1EB31D82036F0026EA79 /* gingham.jpg */,
 				D08D1EAD1D81FA580026EA79 /* spring.png */,
 				D08D1EAF1D81FCFE0026EA79 /* summer.png */,
@@ -433,6 +442,7 @@
 			files = (
 				D0C29F481D77E507005982F1 /* skin.png in Resources */,
 				219957BC1D7120910017D0C8 /* LaunchScreen.storyboard in Resources */,
+				D08D1EBA1D82067F0026EA79 /* uzura.ttf in Resources */,
 				D0C29F001D76CCA8005982F1 /* snowman.png in Resources */,
 				D0C29F441D77E4FD005982F1 /* health3.png in Resources */,
 				D0C29EF11D76A957005982F1 /* mixer.png in Resources */,
@@ -441,6 +451,7 @@
 				D0C29EF81D76AB25005982F1 /* nervous.png in Resources */,
 				D0C29EF71D76AB25005982F1 /* happy.png in Resources */,
 				D08D1EB41D82036F0026EA79 /* gingham.jpg in Resources */,
+				D08D1EB81D82056C0026EA79 /* topname.png in Resources */,
 				D0C29F431D77E4FD005982F1 /* health.png in Resources */,
 				D0C29EFC1D76AB89005982F1 /* tired2.png in Resources */,
 				D0C29F471D77E507005982F1 /* diet.png in Resources */,
@@ -456,6 +467,7 @@
 				D0C29F501D77F0EA005982F1 /* sweet.png in Resources */,
 				D08D1EB01D81FCFE0026EA79 /* summer.png in Resources */,
 				D0C29F4E1D77F0EA005982F1 /* fresh.png in Resources */,
+				D08D1EB61D8205140026EA79 /* button.png in Resources */,
 				D04FB2301D7DB57200CA14BD /* decision.mp3 in Resources */,
 				D08D1EAE1D81FA580026EA79 /* spring.png in Resources */,
 				D08D1E991D8066750026EA79 /* LoadingView.xib in Resources */,
