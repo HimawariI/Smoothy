@@ -18,17 +18,34 @@ class FinalViewController: UIViewController {
     
     var name: String!
     var ingre: String!
-   // var sm: UIImage!
+    var sm : String!
+    //var sm: UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        nameLabel.text = name
+        ingreLabel.text = ingre
+        print(sm)
+        if sm == "g" {
+            smImage.image = UIImage(named: "greenSm.png")
+        } else if sm == "r"{
+            smImage.image = UIImage(named: "pinkSm.png")
+        } else if sm == "y"{
+            smImage.image = UIImage(named: "yellowSm.png")
+        } else {
+            smImage.image = UIImage(named: "aoziru.png")
+        }
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func topModoru() {
+        self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
 

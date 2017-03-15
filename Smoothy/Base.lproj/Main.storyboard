@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="uzura.ttf">
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
+            <string>uzura_font</string>
             <string>uzura_font</string>
             <string>uzura_font</string>
         </mutableArray>
@@ -33,7 +61,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GEg-oy-c2Q" kind="presentation" id="e8d-jF-KSm"/>
+                                    <segue destination="GEg-oy-c2Q" kind="show" id="e8d-jF-KSm"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topname.png" translatesAutoresizingMaskIntoConstraints="NO" id="C6G-gE-YZs">
@@ -46,7 +74,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bud-au-Brw" kind="presentation" id="cs1-0o-WAe"/>
+                                    <segue destination="bud-au-Brw" kind="show" id="cs1-0o-WAe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,39 +91,215 @@
             </objects>
             <point key="canvasLocation" x="272.5" y="287.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Explanation-->
         <scene sceneID="Zbx-8h-xMO">
             <objects>
-                <viewController id="bud-au-Brw" sceneMemberID="viewController">
+                <viewController id="bud-au-Brw" customClass="Explanation" customModule="Smoothy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Isp-Lu-Rbf"/>
-                        <viewControllerLayoutGuide type="bottom" id="E3t-RF-qEA"/>
+                        <viewControllerLayoutGuide type="top" id="RBw-FS-uRF"/>
+                        <viewControllerLayoutGuide type="bottom" id="YEK-MY-wG1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="w0b-Ud-tNb">
+                    <view key="view" contentMode="scaleToFill" id="0gF-Nk-hlb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTM-LS-vCY">
-                                <rect key="frame" x="139" y="544" width="97" height="39"/>
-                                <state key="normal" title="戻る"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="PqS-sY-fCy"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="このやり方は、、" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rC1-VK-HBP">
-                                <rect key="frame" x="58" y="67" width="259" height="168"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gingham.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2LN-cG-26C">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アイコンの説明" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wd-zJ-KiD">
+                                <rect key="frame" x="23" y="197" width="161" height="32"/>
+                                <color key="backgroundColor" red="1" green="0.93176433179999996" blue="0.8540350766" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アプリの説明" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTj-iz-bzB">
+                                <rect key="frame" x="23" y="20" width="161" height="32"/>
+                                <color key="backgroundColor" red="1" green="0.93176433179999996" blue="0.8540350766" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dy-vd-3b6">
+                                <rect key="frame" x="23" y="244" width="329" height="395"/>
+                                <color key="backgroundColor" red="1" green="0.93176433179999996" blue="0.8540350766" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spring.png" translatesAutoresizingMaskIntoConstraints="NO" id="68j-w0-4Il">
+                                <rect key="frame" x="50" y="255" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sweet.png" translatesAutoresizingMaskIntoConstraints="NO" id="OIa-k0-xh7">
+                                <rect key="frame" x="50" y="351" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fresh.png" translatesAutoresizingMaskIntoConstraints="NO" id="PAr-4K-pbE">
+                                <rect key="frame" x="50" y="399" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy.png" translatesAutoresizingMaskIntoConstraints="NO" id="wrg-Bt-PIP">
+                                <rect key="frame" x="50" y="447" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nervous.png" translatesAutoresizingMaskIntoConstraints="NO" id="NPa-Oh-NGZ">
+                                <rect key="frame" x="50" y="495" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diet.png" translatesAutoresizingMaskIntoConstraints="NO" id="0sP-NC-gwS">
+                                <rect key="frame" x="50" y="543" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tired2.png" translatesAutoresizingMaskIntoConstraints="NO" id="fNk-yg-4Qo">
+                                <rect key="frame" x="190" y="495" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="health3.png" translatesAutoresizingMaskIntoConstraints="NO" id="hZr-Pu-occ">
+                                <rect key="frame" x="190" y="589" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skin.png" translatesAutoresizingMaskIntoConstraints="NO" id="cwI-Vj-0LD">
+                                <rect key="frame" x="190" y="543" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unhappy2.png" translatesAutoresizingMaskIntoConstraints="NO" id="dTE-dS-8Sj">
+                                <rect key="frame" x="190" y="447" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mild.png" translatesAutoresizingMaskIntoConstraints="NO" id="1rd-Gi-pzB">
+                                <rect key="frame" x="190" y="399" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bitt.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xm1-DZ-BIc">
+                                <rect key="frame" x="190" y="351" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eye.png" translatesAutoresizingMaskIntoConstraints="NO" id="byO-ri-uzT">
+                                <rect key="frame" x="50" y="589" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imomushiman.png" translatesAutoresizingMaskIntoConstraints="NO" id="RkG-y9-m07">
+                                <rect key="frame" x="50" y="303" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="summer.png" translatesAutoresizingMaskIntoConstraints="NO" id="we0-XJ-LQ9">
+                                <rect key="frame" x="190" y="255" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowman.png" translatesAutoresizingMaskIntoConstraints="NO" id="5av-jG-ioS">
+                                <rect key="frame" x="190" y="303" width="40" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spring" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpx-K4-9Zz">
+                                <rect key="frame" x="98" y="259" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Summer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3R3-Tz-fVh">
+                                <rect key="frame" x="238" y="259" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Winter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iK-7W-E1J">
+                                <rect key="frame" x="238" y="307" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bitter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHa-dV-lHu">
+                                <rect key="frame" x="238" y="355" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mild" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd5-hN-f9M">
+                                <rect key="frame" x="238" y="403" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unhappy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7b-ch-MhR">
+                                <rect key="frame" x="238" y="451" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tired" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBr-Y4-vL4">
+                                <rect key="frame" x="238" y="499" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skin Care" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na6-vf-Pte">
+                                <rect key="frame" x="238" y="547" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Healthy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIa-ld-K2s">
+                                <rect key="frame" x="238" y="593" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Autumn" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pc-7a-wFA">
+                                <rect key="frame" x="98" y="307" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sweet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7e-Xp-nTR">
+                                <rect key="frame" x="98" y="355" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fresh" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccP-Qb-lJ0">
+                                <rect key="frame" x="98" y="403" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Happy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDh-8e-Fhf">
+                                <rect key="frame" x="98" y="451" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nervous" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmy-fe-ipl">
+                                <rect key="frame" x="98" y="499" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftg-XH-u73">
+                                <rect key="frame" x="164" y="637" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="15"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="modoru" destination="bud-au-Brw" eventType="touchUpInside" id="hHJ-CZ-zGJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPH-UU-LTF">
+                                <rect key="frame" x="98" y="547" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eyes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4Q-78-Pr9">
+                                <rect key="frame" x="98" y="593" width="84" height="32"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbW-yi-GNQ">
+                                <rect key="frame" x="23" y="66" width="329" height="115"/>
+                                <color key="backgroundColor" red="1" green="0.93176433179999996" blue="0.8540350766" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">季節、風味、気分、効能の中から自分が気になる
+ものをミキサーに入れてシェイクすると、
+あっという間にあなた好みのスムージーの完成！
+
+携帯をシェイクするときは、周囲に気をつけて、
+携帯が飛んでいかないようにしましょう。</string>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="14.899999618530273"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fMd-sM-pEo"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ry0-N6-2Xq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244.5" y="1122.5"/>
+            <point key="canvasLocation" x="272.5" y="1070.5"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="WOg-u6-kUc">
@@ -109,11 +313,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gingham.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KQ9-KN-34d">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmi-dB-xAB">
                                 <rect key="frame" x="297" y="614" width="75" height="45"/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
-                                    <segue destination="lY3-OI-bsH" kind="presentation" identifier="next" id="FOq-ac-qSK"/>
+                                    <segue destination="lY3-OI-bsH" kind="show" identifier="next" id="FOq-ac-qSK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVP-UL-NpK">
@@ -123,16 +330,10 @@
                                 <color key="textColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KX-ub-dAY">
-                                <rect key="frame" x="14" y="147" width="197" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGl-Ho-GX7">
-                                <rect key="frame" x="219" y="150" width="153" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アイコンをドラッグしてミキサーにいれてね" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KX-ub-dAY">
+                                <rect key="frame" x="5" y="124" width="363" height="43"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="18"/>
+                                <color key="textColor" red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spring.png" translatesAutoresizingMaskIntoConstraints="NO" id="68G-n8-MQ1">
@@ -182,6 +383,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og5-y5-VkB">
                                 <rect key="frame" x="0.0" y="85" width="90" height="30"/>
                                 <color key="backgroundColor" red="0.83921568627450982" green="0.76862745098039209" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="18"/>
                                 <state key="normal" title="季節">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -192,6 +394,7 @@
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-wl-kgW">
                                 <rect key="frame" x="95" y="85" width="90" height="30"/>
                                 <color key="backgroundColor" red="0.78823529411764703" green="0.69411764705882351" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="18"/>
                                 <state key="normal" title="風味">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -202,6 +405,7 @@
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yga-7G-ID9">
                                 <rect key="frame" x="190" y="85" width="90" height="30"/>
                                 <color key="backgroundColor" red="0.73333333333333328" green="0.61568627450980395" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="18"/>
                                 <state key="normal" title="気分">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -212,6 +416,7 @@
                             <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB9-7v-uxE">
                                 <rect key="frame" x="285" y="85" width="90" height="30"/>
                                 <color key="backgroundColor" red="0.5490196078431373" green="0.46274509803921571" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="18"/>
                                 <state key="normal" title="効能">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -345,12 +550,6 @@
                                     <outletCollection property="gestureRecognizers" destination="Hnu-zh-EGx" appends="YES" id="MP8-5s-hOf"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNV-8f-Ytb">
-                                <rect key="frame" x="0.0" y="123" width="375" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mixer.png" translatesAutoresizingMaskIntoConstraints="NO" id="5a0-az-eCP">
                                 <rect key="frame" x="27" y="229" width="184" height="367"/>
                             </imageView>
@@ -364,10 +563,25 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pahu.png" translatesAutoresizingMaskIntoConstraints="NO" id="R70-fE-8mb">
-                                <rect key="frame" x="199" y="189" width="87" height="75"/>
+                                <rect key="frame" x="199" y="193" width="87" height="75"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hsy-ko-dLr">
+                                <rect key="frame" x="34" y="197" width="169" height="114"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGl-Ho-GX7">
+                                <rect key="frame" x="194" y="329" width="178" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.51293720606034021" blue="0.95109302106581894" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVA-00-s1W">
+                                <rect key="frame" x="47" y="229" width="144" height="52"/>
+                                <connections>
+                                    <action selector="topOpen" destination="GEg-oy-c2Q" eventType="touchUpInside" id="8s5-kN-Kb9"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.93176433177384199" blue="0.85403507655257305" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Sop-zU-e1b" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="1LG-nk-gK3"/>
                             <constraint firstItem="Sop-zU-e1b" firstAttribute="centerX" secondItem="f5b-qI-CEa" secondAttribute="centerX" constant="44" id="EFI-fU-XYD"/>
@@ -403,6 +617,7 @@
                             <constraint firstItem="Kku-V5-rT8" firstAttribute="centerY" secondItem="f5b-qI-CEa" secondAttribute="centerY" constant="-286" id="y7H-qp-MCA"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vNr-Xb-hVo"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="checkLabel" destination="9KX-ub-dAY" id="x8i-ha-jtX"/>
@@ -410,6 +625,7 @@
                         <outlet property="pahuImage" destination="R70-fE-8mb" id="3Ui-0h-CJs"/>
                         <outlet property="shakeLabel" destination="hGl-Ho-GX7" id="4nr-9t-tjo"/>
                         <outlet property="topImage" destination="dAV-QD-Iyg" id="koW-fU-gkt"/>
+                        <outlet property="topImage2" destination="Hsy-ko-dLr" id="NDm-x8-9aX"/>
                         <outletCollection property="iconCollection" destination="68G-n8-MQ1" collectionClass="NSMutableArray" id="DRC-PG-ZCe"/>
                         <outletCollection property="iconCollection" destination="3gZ-cE-8eF" collectionClass="NSMutableArray" id="yfq-SD-OsP"/>
                         <outletCollection property="iconCollection" destination="Sop-zU-e1b" collectionClass="NSMutableArray" id="aIQ-qk-zrC"/>
@@ -558,35 +774,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gingham.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NWf-T0-RNf">
+                                <rect key="frame" x="0.0" y="324" width="375" height="343"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8n-Jx-nEu">
-                                <rect key="frame" x="177" y="608" width="45" height="30"/>
+                                <rect key="frame" x="165" y="617" width="45" height="30"/>
                                 <state key="normal" title="TOPへ"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Lhv-av-Ebm"/>
+                                    <action selector="topModoru" destination="lY3-OI-bsH" eventType="touchUpInside" id="DyU-5p-YHn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スムージー名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z83-zS-hIm">
-                                <rect key="frame" x="136" y="40" width="102" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkSm.png" translatesAutoresizingMaskIntoConstraints="NO" id="IBK-pD-cEz">
+                                <rect key="frame" x="50" y="95" width="275" height="300"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="材料" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyR-IM-1dc">
+                                <rect key="frame" x="20" y="414" width="335" height="195"/>
+                                <color key="backgroundColor" red="0.82167467948717943" green="0.76560715866785756" blue="0.70173899779714421" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBK-pD-cEz">
-                                <rect key="frame" x="67" y="78" width="240" height="225"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="材料" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyR-IM-1dc">
-                                <rect key="frame" x="170" y="344" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スムージー名" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z83-zS-hIm">
+                                <rect key="frame" x="20" y="20" width="335" height="67"/>
+                                <color key="backgroundColor" red="0.98705929487179489" green="0.73084797292663695" blue="0.97448578390375507" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.91764705882352937" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="ingreLabel" destination="eyR-IM-1dc" id="59Z-wD-5n1"/>
-                        <outlet property="nameLabel" destination="Z83-zS-hIm" id="dVc-qz-oZ2"/>
+                        <outlet property="ingreLabel" destination="eyR-IM-1dc" id="SWV-XF-l1K"/>
+                        <outlet property="nameLabel" destination="Z83-zS-hIm" id="wIf-vV-1c5"/>
                         <outlet property="smImage" destination="IBK-pD-cEz" id="f8x-9Z-HWF"/>
                     </connections>
                 </viewController>
@@ -609,6 +830,7 @@
         <image name="mixer.png" width="328" height="699"/>
         <image name="nervous.png" width="350" height="350"/>
         <image name="pahu.png" width="234" height="219"/>
+        <image name="pinkSm.png" width="127" height="312"/>
         <image name="skin.png" width="350" height="350"/>
         <image name="snowman.png" width="320" height="322"/>
         <image name="spring.png" width="320" height="322"/>
@@ -619,7 +841,4 @@
         <image name="topname.png" width="375" height="186"/>
         <image name="unhappy2.png" width="350" height="350"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Lhv-av-Ebm"/>
-    </inferredMetricsTieBreakers>
 </document>
