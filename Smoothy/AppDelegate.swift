@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var audioPlayer:AVAudioPlayer! =  AVAudioPlayer()
+    var sound_data = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bgm", ofType: "mp3")!)
 
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        audioPlayer =  try? AVAudioPlayer(contentsOfURL:sound_data)
+        audioPlayer.play()       //アプリ起動から音楽スタート
+        audioPlayer.numberOfLoops = -1      //音楽ループ
+        
         return true
     }
 
